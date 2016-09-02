@@ -43,7 +43,7 @@
         button.sd_layout.centerXEqualToView(self.view).widthIs(250).heightIs(30).topSpaceToView(self.view,100 + 60 * i);
         button.clipsToBounds = YES;
         button.layer.cornerRadius = 3.0f;
-        button.tag = i;
+        button.tag = i;//工具感觉个
         button.backgroundColor = [UIColor orangeColor];
         button.titleLabel.font = [UIFont systemFontOfSize:14.0f];
         [button setTitle:titleArray[i] forState:UIControlStateNormal];
