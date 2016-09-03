@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "JYPengYouQuanViewController.h"
+
+
 
 #import "UIView+SDAutoLayout.h"
 
@@ -28,19 +31,14 @@
 
 -(void)createCustomContents{
     
-   // NSArray * titleArray = @[@"统计玩家服务器注册数据",@"统计玩家的账号登陆服务器数据",@"统计玩家的充值数据",@"统计玩家在游戏内的虚拟交易数据",@"统计玩家的任务、副本数据",@"统计玩家的自定义事件",];
-    
-    
-     NSArray * titleArray = @[@"1111",@"2222"];
-    
-    
+     NSArray * titleArray = @[@"1111",@"点击进入朋友圈"];
     
     for (int i = 0; i < titleArray.count; i++) {
         
         UIButton  * button = [[UIButton alloc]init];
         [self.view addSubview:button];
         
-        button.sd_layout.centerXEqualToView(self.view).widthIs(250).heightIs(30).topSpaceToView(self.view,100 + 60 * i);
+        button.sd_layout.centerXEqualToView(self.view).widthIs(250).heightIs(30).topSpaceToView(self.view,200 + 60 * i);
         button.clipsToBounds = YES;
         button.layer.cornerRadius = 3.0f;
         button.tag = i;//工具感觉个
@@ -55,7 +53,8 @@
 
 -(void)clickAllButton:(UIButton *)button{
     
-    NSLog(@"button.tag:%ld",(long)button.tag);
+    [self.navigationController pushViewController:[JYPengYouQuanViewController new] animated:YES];
+//    NSLog(@"button.tag:%ld",(long)button.tag);
     
 }
 @end
