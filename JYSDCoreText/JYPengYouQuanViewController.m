@@ -9,11 +9,11 @@
 
 #define CELLID NSStringFromClass([JYPengYouQuanCustomCell class])
 #import "JYPengYouQuanViewController.h"
+#import "JYFaBiaoPingLunViewController.h"//发表状态
 
 #import "JYHeaderView.h"//头部视图
 #import "JYPengYouQuanModel.h"//数据模型
 #import "JYPengYouQuanCustomCell.h"
-
 
 #import "UITableView+SDAutoTableViewCellHeight.h"
 
@@ -41,6 +41,8 @@
     self.title = @"朋友圈";
 
     
+    //self.automaticallyAdjustsScrollViewInsets = NO;
+        
     //第一种方法
     UIButton * addButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 80, 20)];
     [addButton setTitle:@"发表状态" forState:UIControlStateNormal];
@@ -56,9 +58,9 @@
 }
 
 -(void)addNewContent{
-    
-    
-    
+
+    JYFaBiaoPingLunViewController * faBiaoPinglunVC = [[JYFaBiaoPingLunViewController alloc]init];
+    [self.navigationController pushViewController:faBiaoPinglunVC animated:YES];
 }
 
 #pragma mark - 2.创建tableView
@@ -66,10 +68,10 @@
     
     self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     self.tableView.backgroundColor = [UIColor whiteColor];
-    self.tableView.sectionHeaderHeight = CGFLOAT_MIN;
-    self.tableView.sectionFooterHeight = CGFLOAT_MIN;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    self.tableView.sectionFooterHeight = CGFLOAT_MIN; //1. 这两句代码写在这里,设置高度不起作用
     [self.view addSubview:self.tableView];
 }
 
@@ -79,13 +81,14 @@
     JYHeaderView * headerView = [[JYHeaderView alloc]initWithFrame:CGRectMake(0, 0, 0, 260)];
     self.tableView.tableHeaderView = headerView;
     
+    headerView.backgroundColor = [UIColor yellowColor];
     [self.tableView registerClass:[JYPengYouQuanCustomCell class] forCellReuseIdentifier:CELLID];
 }
 
 #pragma mark - 3.tableViewDataSourceDelegate
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return 2;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -95,7 +98,6 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    
     JYPengYouQuanCustomCell * cell = [tableView dequeueReusableCellWithIdentifier:CELLID];
     cell.model = self.modelsArray[indexPath.row];
     
@@ -103,12 +105,15 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
     CGFloat cellHeight = [self cellHeightForIndexPath:indexPath cellContentViewWidth:[UIScreen mainScreen].bounds.size.width tableView:self.tableView];
     
-    
     return cellHeight;
+}
 
+
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    
+    return tableView.sectionFooterHeight;
 }
 
 - (void)creatModelsWithCount:(NSInteger)count

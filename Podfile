@@ -16,6 +16,6 @@ pod 'BaiduMapKit'
 
 
 pod 'MJExtension'
-
+pod 'TZImagePickerController'
 
 end

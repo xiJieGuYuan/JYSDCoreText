@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JYSDCoreText/ViewController.m"
-            timestampString = "494585095.83362"
+            filePath = "JYSDCoreText/JYFaBiaoPingLunViewController.m"
+            timestampString = "494937117.201542"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "-createCustomContents"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "-photosView:didAddImageClickedWithImages:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
