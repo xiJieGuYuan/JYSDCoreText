@@ -8,12 +8,17 @@
 
 #import "JYFaBiaoPingLunViewController.h"
 #import "PYPhotosView.h"
+#import "LayoutTextView.h"
 
 @interface JYFaBiaoPingLunViewController ()<PYPhotosViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (nonatomic, strong) PYPhotosView *publishPhotosView;/** 即将发布的图片存储的photosView */
 @property(nonatomic,strong) UIImagePickerController *imagePickerController;
 @property (nonatomic,strong) NSMutableArray * imagesArray;//图片数组
+
+
+@property (nonatomic,strong) LayoutTextView *layoutTextView ;
+
 
 
 @end
@@ -61,6 +66,24 @@
     
     NSLog(@"点击了发送按钮");
     
+    CGFloat layoutTextHeight = 44;
+
+    [self.layoutTextView removeFromSuperview];
+    
+    self.layoutTextView = [[LayoutTextView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height + layoutTextHeight , self.view.frame.size.width, layoutTextHeight)];
+    
+//    [self.view insertSubview:self.layoutTextView atIndex:0];
+    
+    [self.view addSubview:self.layoutTextView];
+    [self.layoutTextView.textView becomeFirstResponder];
+    
+    [self.layoutTextView setSendBlock:^(UITextView *textView) {
+        NSLog(@"%@",textView.text);
+    }];
+}
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [self.layoutTextView removeFromSuperview];
 }
 
 
@@ -68,15 +91,14 @@
 -(void)createPublishPhotosView{
     
     _publishPhotosView = [PYPhotosView photosView];
-    _publishPhotosView.py_x = 10 * 5;
-    _publishPhotosView.py_y = 10 * 5 + 64;
+    _publishPhotosView.py_x = 10 * 8;
+    _publishPhotosView.py_y = 10 * 8 + 64;
     
     _publishPhotosView.backgroundColor = [UIColor yellowColor];
     NSMutableArray *originalImageUrls = [NSMutableArray array];
     
     
-    
-    //2.设置本地图片
+     //2.设置本地图片
     _publishPhotosView.images = originalImageUrls;
     //3.设置代理
     _publishPhotosView.delegate = self;
@@ -101,7 +123,7 @@
 
     self.imagePickerController.presentedViewController.modalPresentationStyle  = UIModalPresentationOverCurrentContext;
     
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"选择地图" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"请选择照片" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
     UIAlertAction *actionCamera = [UIAlertAction actionWithTitle:@"拍照" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
