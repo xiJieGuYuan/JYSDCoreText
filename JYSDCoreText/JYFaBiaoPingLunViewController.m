@@ -66,13 +66,14 @@
     
     NSLog(@"点击了发送按钮");
     
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
     CGFloat layoutTextHeight = 44;
 
     [self.layoutTextView removeFromSuperview];
     
-    self.layoutTextView = [[LayoutTextView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height + layoutTextHeight , self.view.frame.size.width, layoutTextHeight)];
+    self.layoutTextView = [[LayoutTextView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height , self.view.frame.size.width, layoutTextHeight)];
     
-//    [self.view insertSubview:self.layoutTextView atIndex:0];
     
     [self.view addSubview:self.layoutTextView];
     [self.layoutTextView.textView becomeFirstResponder];
