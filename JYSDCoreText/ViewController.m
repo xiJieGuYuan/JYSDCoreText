@@ -9,10 +9,10 @@
 #import "ViewController.h"
 #import "JYPengYouQuanViewController.h"
 
-
-
 #import "UIView+SDAutoLayout.h"
 
+
+#import "UIButton+touch.h"
 @interface ViewController ()
 
 @end
@@ -28,7 +28,6 @@
     
 }
 
-
 -(void)createCustomContents{
     
      NSArray * titleArray = @[@"1111",@"点击进入朋友圈"];
@@ -40,21 +39,20 @@
         
         button.sd_layout.centerXEqualToView(self.view).widthIs(250).heightIs(30).topSpaceToView(self.view,200 + 60 * i);
         button.clipsToBounds = YES;
+        button.timeInterval = 2;
         button.layer.cornerRadius = 3.0f;
-        button.tag = i;//工具感觉个
+        button.tag = i;
         button.backgroundColor = [UIColor orangeColor];
         button.titleLabel.font = [UIFont systemFontOfSize:14.0f];
         [button setTitle:titleArray[i] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(clickAllButton:) forControlEvents:UIControlEventTouchUpInside];
-        
     }
 }
 
 
 -(void)clickAllButton:(UIButton *)button{
     
+    NSLog(@"我点击了按钮");
     [self.navigationController pushViewController:[JYPengYouQuanViewController new] animated:YES];
-//    NSLog(@"button.tag:%ld",(long)button.tag);
-    
 }
 @end
