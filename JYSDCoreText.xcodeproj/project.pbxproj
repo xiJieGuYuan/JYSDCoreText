@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A21A0BF1DD6E29100A6DF11 /* coreAnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0BE1DD6E29100A6DF11 /* coreAnimationListViewController.m */; };
+		4A21A0C31DD6E89200A6DF11 /* baseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0C21DD6E89200A6DF11 /* baseAnimationViewController.m */; };
+		4A21A0CE1DD6EB5E00A6DF11 /* baseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0CD1DD6EB5E00A6DF11 /* baseViewController.m */; };
+		4A21A0D21DD6EC0300A6DF11 /* TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0D11DD6EC0300A6DF11 /* TitleButton.m */; };
 		4A43A36C1DA8D4DA00C22E2A /* UIButton+Delay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A43A3691DA8D4DA00C22E2A /* UIButton+Delay.m */; };
 		4A43A36D1DA8D4DA00C22E2A /* UIButton+touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A43A36B1DA8D4DA00C22E2A /* UIButton+touch.m */; };
+		4A43A3721DA8DABA00C22E2A /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A43A3711DA8DABA00C22E2A /* UIImage+Color.m */; };
+		4A43A3761DA8DBAA00C22E2A /* JYSolidColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A43A3751DA8DBAA00C22E2A /* JYSolidColorButton.m */; };
 		4A503FFB1D82A241001F1D7A /* LayoutTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A503FFA1D82A241001F1D7A /* LayoutTextView.m */; };
 		4A50401A1D82A352001F1D7A /* EmojiToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5040001D82A352001F1D7A /* EmojiToolBar.m */; };
 		4A50401B1D82A352001F1D7A /* EmojiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5040031D82A352001F1D7A /* EmojiCell.m */; };
@@ -22,6 +28,8 @@
 		4A5040231D82A352001F1D7A /* UIColor+MyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5040151D82A352001F1D7A /* UIColor+MyColor.m */; };
 		4A5040241D82A352001F1D7A /* UIFont+MyFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5040171D82A352001F1D7A /* UIFont+MyFont.m */; };
 		4A5040251D82A352001F1D7A /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5040191D82A352001F1D7A /* UIView+Frame.m */; };
+		4AB55DBF1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB55DBE1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m */; };
+		4AB55DC31DD709C400FF89B6 /* groupAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB55DC21DD709C400FF89B6 /* groupAnimationViewController.m */; };
 		4ABDF9971D685C060074C249 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABDF9961D685C060074C249 /* main.m */; };
 		4ABDF99A1D685C060074C249 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABDF9991D685C060074C249 /* AppDelegate.m */; };
 		4ABDF99D1D685C060074C249 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABDF99C1D685C060074C249 /* ViewController.m */; };
@@ -96,10 +104,23 @@
 /* Begin PBXFileReference section */
 		0A3AA4DF66008FCA3007009F /* Pods-JYSDCoreText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYSDCoreText.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYSDCoreText/Pods-JYSDCoreText.release.xcconfig"; sourceTree = "<group>"; };
 		39405C16FF6D29B9C572CC15 /* Pods-JYSDCoreText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYSDCoreText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYSDCoreText/Pods-JYSDCoreText.debug.xcconfig"; sourceTree = "<group>"; };
+		4A21A0BD1DD6E29100A6DF11 /* coreAnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coreAnimationListViewController.h; sourceTree = "<group>"; };
+		4A21A0BE1DD6E29100A6DF11 /* coreAnimationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = coreAnimationListViewController.m; sourceTree = "<group>"; };
+		4A21A0C11DD6E89200A6DF11 /* baseAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseAnimationViewController.h; sourceTree = "<group>"; };
+		4A21A0C21DD6E89200A6DF11 /* baseAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseAnimationViewController.m; sourceTree = "<group>"; };
+		4A21A0CB1DD6EA9300A6DF11 /* configHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = configHeader.h; path = JYSDCoreText/configHeader.h; sourceTree = "<group>"; };
+		4A21A0CC1DD6EB5E00A6DF11 /* baseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseViewController.h; sourceTree = "<group>"; };
+		4A21A0CD1DD6EB5E00A6DF11 /* baseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseViewController.m; sourceTree = "<group>"; };
+		4A21A0D01DD6EC0300A6DF11 /* TitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleButton.h; sourceTree = "<group>"; };
+		4A21A0D11DD6EC0300A6DF11 /* TitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleButton.m; sourceTree = "<group>"; };
 		4A43A3681DA8D4DA00C22E2A /* UIButton+Delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Delay.h"; sourceTree = "<group>"; };
 		4A43A3691DA8D4DA00C22E2A /* UIButton+Delay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Delay.m"; sourceTree = "<group>"; };
 		4A43A36A1DA8D4DA00C22E2A /* UIButton+touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+touch.h"; sourceTree = "<group>"; };
 		4A43A36B1DA8D4DA00C22E2A /* UIButton+touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+touch.m"; sourceTree = "<group>"; };
+		4A43A3701DA8DABA00C22E2A /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		4A43A3711DA8DABA00C22E2A /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		4A43A3741DA8DBAA00C22E2A /* JYSolidColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYSolidColorButton.h; sourceTree = "<group>"; };
+		4A43A3751DA8DBAA00C22E2A /* JYSolidColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYSolidColorButton.m; sourceTree = "<group>"; };
 		4A503FF91D82A241001F1D7A /* LayoutTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutTextView.h; sourceTree = "<group>"; };
 		4A503FFA1D82A241001F1D7A /* LayoutTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutTextView.m; sourceTree = "<group>"; };
 		4A503FFF1D82A352001F1D7A /* EmojiToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiToolBar.h; sourceTree = "<group>"; };
@@ -126,6 +147,10 @@
 		4A5040171D82A352001F1D7A /* UIFont+MyFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+MyFont.m"; sourceTree = "<group>"; };
 		4A5040181D82A352001F1D7A /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		4A5040191D82A352001F1D7A /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		4AB55DBD1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyFrameAnimationViewController.h; sourceTree = "<group>"; };
+		4AB55DBE1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = keyFrameAnimationViewController.m; sourceTree = "<group>"; };
+		4AB55DC11DD709C400FF89B6 /* groupAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groupAnimationViewController.h; sourceTree = "<group>"; };
+		4AB55DC21DD709C400FF89B6 /* groupAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = groupAnimationViewController.m; sourceTree = "<group>"; };
 		4ABDF9921D685C060074C249 /* JYSDCoreText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYSDCoreText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABDF9961D685C060074C249 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4ABDF9981D685C060074C249 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -249,6 +274,64 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4A21A0B91DD6E21B00A6DF11 /* 朋友圈 */ = {
+			isa = PBXGroup;
+			children = (
+				4ABDFA091D6864CA0074C249 /* Controller */,
+				4ABDFA0A1D6864D60074C249 /* View */,
+				4ABDFA071D6864C50074C249 /* Model */,
+			);
+			name = "朋友圈";
+			sourceTree = "<group>";
+		};
+		4A21A0BA1DD6E24000A6DF11 /* core animation */ = {
+			isa = PBXGroup;
+			children = (
+				4A21A0BB1DD6E26100A6DF11 /* coreAnimationList */,
+				4A21A0C01DD6E85900A6DF11 /* 基础动画 */,
+				4AB55DBC1DD6FF8300FF89B6 /* 关键帧动画 */,
+				4AB55DC01DD7098A00FF89B6 /* 动画组 */,
+			);
+			name = "core animation";
+			sourceTree = "<group>";
+		};
+		4A21A0BB1DD6E26100A6DF11 /* coreAnimationList */ = {
+			isa = PBXGroup;
+			children = (
+				4A21A0BD1DD6E29100A6DF11 /* coreAnimationListViewController.h */,
+				4A21A0BE1DD6E29100A6DF11 /* coreAnimationListViewController.m */,
+			);
+			name = coreAnimationList;
+			sourceTree = "<group>";
+		};
+		4A21A0C01DD6E85900A6DF11 /* 基础动画 */ = {
+			isa = PBXGroup;
+			children = (
+				4A21A0C11DD6E89200A6DF11 /* baseAnimationViewController.h */,
+				4A21A0C21DD6E89200A6DF11 /* baseAnimationViewController.m */,
+			);
+			name = "基础动画";
+			sourceTree = "<group>";
+		};
+		4A21A0C41DD6E98000A6DF11 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				4A21A0CB1DD6EA9300A6DF11 /* configHeader.h */,
+			);
+			name = tool;
+			sourceTree = "<group>";
+		};
+		4A21A0CF1DD6EBE100A6DF11 /* baseVC */ = {
+			isa = PBXGroup;
+			children = (
+				4A21A0D01DD6EC0300A6DF11 /* TitleButton.h */,
+				4A21A0D11DD6EC0300A6DF11 /* TitleButton.m */,
+				4A21A0CC1DD6EB5E00A6DF11 /* baseViewController.h */,
+				4A21A0CD1DD6EB5E00A6DF11 /* baseViewController.m */,
+			);
+			name = baseVC;
+			sourceTree = "<group>";
+		};
 		4A43A3671DA8D4DA00C22E2A /* UIButton-touch(防暴点击) */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +342,32 @@
 			);
 			name = "UIButton-touch(防暴点击)";
 			path = "UIButton-touch";
+			sourceTree = "<group>";
+		};
+		4A43A36E1DA8DA8700C22E2A /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				4A43A36F1DA8DAAD00C22E2A /* UIImage */,
+			);
+			name = "Category(分类)";
+			sourceTree = "<group>";
+		};
+		4A43A36F1DA8DAAD00C22E2A /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				4A43A3701DA8DABA00C22E2A /* UIImage+Color.h */,
+				4A43A3711DA8DABA00C22E2A /* UIImage+Color.m */,
+			);
+			name = UIImage;
+			sourceTree = "<group>";
+		};
+		4A43A3731DA8DAD900C22E2A /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				4A43A3741DA8DBAA00C22E2A /* JYSolidColorButton.h */,
+				4A43A3751DA8DBAA00C22E2A /* JYSolidColorButton.m */,
+			);
+			name = CustomButton;
 			sourceTree = "<group>";
 		};
 		4A503FF81D82A241001F1D7A /* LayoutTextView */ = {
@@ -341,11 +450,32 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		4AB55DBC1DD6FF8300FF89B6 /* 关键帧动画 */ = {
+			isa = PBXGroup;
+			children = (
+				4AB55DBD1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.h */,
+				4AB55DBE1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m */,
+			);
+			name = "关键帧动画";
+			sourceTree = "<group>";
+		};
+		4AB55DC01DD7098A00FF89B6 /* 动画组 */ = {
+			isa = PBXGroup;
+			children = (
+				4AB55DC11DD709C400FF89B6 /* groupAnimationViewController.h */,
+				4AB55DC21DD709C400FF89B6 /* groupAnimationViewController.m */,
+			);
+			name = "动画组";
+			sourceTree = "<group>";
+		};
 		4ABDF9891D685C060074C249 = {
 			isa = PBXGroup;
 			children = (
 				4ABDF9941D685C060074C249 /* JYSDCoreText */,
+				4A21A0C41DD6E98000A6DF11 /* tool */,
 				4ABDF9C81D685E870074C249 /* lib */,
+				4A43A36E1DA8DA8700C22E2A /* Category(分类) */,
+				4A43A3731DA8DAD900C22E2A /* CustomButton */,
 				4ABDF9AE1D685C060074C249 /* JYSDCoreTextTests */,
 				4ABDF9B91D685C060074C249 /* JYSDCoreTextUITests */,
 				4ABDF9931D685C060074C249 /* Products */,
@@ -371,8 +501,9 @@
 				4ABDF9991D685C060074C249 /* AppDelegate.m */,
 				4ABDF99B1D685C060074C249 /* ViewController.h */,
 				4ABDF99C1D685C060074C249 /* ViewController.m */,
+				4A21A0CF1DD6EBE100A6DF11 /* baseVC */,
 				4ABDFA061D6864AC0074C249 /* 朋友圈 */,
-				4AE94E441D7AE3330015EF5C /* 发表评论 */,
+				4A21A0BA1DD6E24000A6DF11 /* core animation */,
 				4ABDF99E1D685C060074C249 /* Main.storyboard */,
 				4ABDF9A11D685C060074C249 /* Assets.xcassets */,
 				4ABDF9A31D685C060074C249 /* LaunchScreen.storyboard */,
@@ -522,9 +653,8 @@
 		4ABDFA061D6864AC0074C249 /* 朋友圈 */ = {
 			isa = PBXGroup;
 			children = (
-				4ABDFA091D6864CA0074C249 /* Controller */,
-				4ABDFA0A1D6864D60074C249 /* View */,
-				4ABDFA071D6864C50074C249 /* Model */,
+				4A21A0B91DD6E21B00A6DF11 /* 朋友圈 */,
+				4AE94E441D7AE3330015EF5C /* 发表评论 */,
 			);
 			name = "朋友圈";
 			sourceTree = "<group>";
@@ -847,6 +977,7 @@
 				4ABDF9F71D6863350074C249 /* PYPhotosView.m in Sources */,
 				4AE94E381D7AD3260015EF5C /* SDWeiXinPhotoContainerView.m in Sources */,
 				4A43A36D1DA8D4DA00C22E2A /* UIButton+touch.m in Sources */,
+				4A21A0D21DD6EC0300A6DF11 /* TitleButton.m in Sources */,
 				4A50401D1D82A352001F1D7A /* SinglePageEmojiCell.m in Sources */,
 				4AE94E4A1D7AE39A0015EF5C /* JYFaBiaoPingLunViewController.m in Sources */,
 				4ABDF9FF1D68638D0074C249 /* DALabeledCircularProgressView.m in Sources */,
@@ -856,6 +987,7 @@
 				4ABDF9F61D6863350074C249 /* PYPhotoCell.m in Sources */,
 				4AE94E0E1D7AC5600015EF5C /* JYHeaderView.m in Sources */,
 				4AE94E421D7ADA7C0015EF5C /* SDPhotoBrowser.m in Sources */,
+				4AB55DBF1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m in Sources */,
 				4A50401C1D82A352001F1D7A /* EmojiCollectionView.m in Sources */,
 				4ABDF99D1D685C060074C249 /* ViewController.m in Sources */,
 				4ABDF9F11D6863350074C249 /* PYPhoto.m in Sources */,
@@ -864,14 +996,17 @@
 				4ABDFA051D6863990074C249 /* MBProgressHUD.m in Sources */,
 				4ABDF9F81D6863350074C249 /* PYPhotoView.m in Sources */,
 				4A50401F1D82A352001F1D7A /* HCEmojiManager.m in Sources */,
+				4A21A0CE1DD6EB5E00A6DF11 /* baseViewController.m in Sources */,
 				4ABDF9EF1D6863350074C249 /* PYPhotosReaderController.m in Sources */,
 				4ABDF9EB1D6863350074C249 /* MBProgressHUD+PY.m in Sources */,
+				4A43A3721DA8DABA00C22E2A /* UIImage+Color.m in Sources */,
 				4ABDF9EE1D6863350074C249 /* PYPhotosPreviewController.m in Sources */,
 				4ABDF9F01D6863350074C249 /* PYPhotosViewController.m in Sources */,
 				4A50401A1D82A352001F1D7A /* EmojiToolBar.m in Sources */,
 				4ABDF9F21D6863350074C249 /* PYConst.m in Sources */,
 				4AE94E321D7AC9C30015EF5C /* JYPengYouQuanModel.m in Sources */,
 				4AE94E431D7ADA7C0015EF5C /* SDWaitingView.m in Sources */,
+				4AB55DC31DD709C400FF89B6 /* groupAnimationViewController.m in Sources */,
 				4AE94E0B1D7AC3810015EF5C /* JYPengYouQuanViewController.m in Sources */,
 				4ABDF9971D685C060074C249 /* main.m in Sources */,
 				4A50401E1D82A352001F1D7A /* HCEmojiKeyboard.m in Sources */,
@@ -880,7 +1015,10 @@
 				4ABDF9ED1D6863350074C249 /* PYNavigationController.m in Sources */,
 				4A5040211D82A352001F1D7A /* HCInputBar.m in Sources */,
 				4A43A36C1DA8D4DA00C22E2A /* UIButton+Delay.m in Sources */,
+				4A21A0C31DD6E89200A6DF11 /* baseAnimationViewController.m in Sources */,
+				4A43A3761DA8DBAA00C22E2A /* JYSolidColorButton.m in Sources */,
 				4A5040231D82A352001F1D7A /* UIColor+MyColor.m in Sources */,
+				4A21A0BF1DD6E29100A6DF11 /* coreAnimationListViewController.m in Sources */,
 				4ABDF9F51D6863350074C249 /* PYPhotoBrowseView.m in Sources */,
 				4ABDF9EC1D6863350074C249 /* UIView+PYExtension.m in Sources */,
 			);

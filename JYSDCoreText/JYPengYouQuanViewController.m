@@ -27,6 +27,17 @@
 
 @implementation JYPengYouQuanViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+
+    
+    [super viewWillAppear:animated];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(testDeallocReleaseNotifi) name:@"testDeallocReleaseNotifi" object:nil];
+    
+      NSLog(@"self.navigationController:%@,数组%@  =====firstObject:%@",self.navigationController,self.navigationController.viewControllers,[self.navigationController.viewControllers firstObject]);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNav];
@@ -35,13 +46,16 @@
     [self creatModelsWithCount:10];
 }
 
+-(void)testDeallocReleaseNotifi{
+//      NSLog(@"testDeallocReleaseNotifi === self.navigationController:%@,数组%@  =====firstObject:%@",self.navigationController,self.navigationController.viewControllers,[self.navigationController.viewControllers lastObject]);
+}
+
 #pragma mark - 1.设置导航栏相关内容
 -(void)setNav{
     
     self.title = @"朋友圈";
+    NSLog(@"%@",self.navigationController.viewControllers);
 
-    
-    //self.automaticallyAdjustsScrollViewInsets = NO;
         
     //第一种方法
     UIButton * addButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 80, 20)];
@@ -86,7 +100,6 @@
 }
 
 #pragma mark - 3.tableViewDataSourceDelegate
-
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 2;
 }
@@ -100,7 +113,6 @@
 
     JYPengYouQuanCustomCell * cell = [tableView dequeueReusableCellWithIdentifier:CELLID];
     cell.model = self.modelsArray[indexPath.row];
-    
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -115,8 +127,14 @@
     return tableView.sectionFooterHeight;
 }
 
-- (void)creatModelsWithCount:(NSInteger)count
-{
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSLog(@"self.navigationController:%@,数组%@  =====firstObject:%@",self.navigationController,self.navigationController.viewControllers,[self.navigationController.viewControllers lastObject]);
+}
+
+
+- (void)creatModelsWithCount:(NSInteger)count{
+    
     if (!_modelsArray) {
         _modelsArray = [NSMutableArray new];
     }
@@ -177,5 +195,12 @@
         
         [self.modelsArray addObject:model];
     }
+}
+
+-(void)dealloc{
+    
+
+     NSLog(@"self.navigationController:%@,数组%@  =====firstObject:%@",self.navigationController,self.navigationController.viewControllers,[self.navigationController.viewControllers firstObject]);
+    NSLog(@"朋友圈控制器释放掉了");
 }
 @end

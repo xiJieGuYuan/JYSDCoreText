@@ -16,10 +16,7 @@
 @property(nonatomic,strong) UIImagePickerController *imagePickerController;
 @property (nonatomic,strong) NSMutableArray * imagesArray;//图片数组
 
-
 @property (nonatomic,strong) LayoutTextView *layoutTextView ;
-
-
 
 @end
 
@@ -66,25 +63,34 @@
     
     NSLog(@"点击了发送按钮");
     
-    [self.navigationController popToRootViewControllerAnimated:YES];
+   // [self.navigationController popToRootViewControllerAnimated:YES];
     
     CGFloat layoutTextHeight = 44;
 
-    [self.layoutTextView removeFromSuperview];
+//    [self.layoutTextView removeFromSuperview];
     
-    self.layoutTextView = [[LayoutTextView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height , self.view.frame.size.width, layoutTextHeight)];
-    
-    
-    [self.view addSubview:self.layoutTextView];
-    [self.layoutTextView.textView becomeFirstResponder];
-    
-    [self.layoutTextView setSendBlock:^(UITextView *textView) {
-        NSLog(@"%@",textView.text);
-    }];
+    if (!self.layoutTextView) {
+        self.layoutTextView = [[LayoutTextView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height , self.view.frame.size.width, layoutTextHeight)];
+        [self.view addSubview:self.layoutTextView];
+        [self.layoutTextView.textView becomeFirstResponder];
+        self.layoutTextView.placeholder = @"@测试一下子";
+        
+        [self.layoutTextView setSendBlock:^(UITextView *textView) {
+            NSLog(@"%@",textView.text);
+        }];
+
+    }else{
+        
+       // [self.layoutTextView setHidden: NO];
+        [self.layoutTextView.textView becomeFirstResponder];
+
+    }
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    [self.layoutTextView removeFromSuperview];
+//    [self.layoutTextView removeFromSuperview];
+   // [self.layoutTextView setHidden: YES];
+    [self.layoutTextView.textView resignFirstResponder];
 }
 
 
@@ -163,9 +169,30 @@
     
     [picker dismissViewControllerAnimated:YES completion:nil];
     
-    UIImage *image =  [info objectForKey:@"UIImagePickerControllerEditedImage"];
+//    UIImage *image =  [info objectForKey:@"UIImagePickerControllerEditedImage"];
+    
+    UIImage *image =  [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+
     
     [self.imagesArray addObject:image];
     [self.publishPhotosView reloadDataWithImages:self.imagesArray];
+}
+
+
+-(void)dealloc{
+    
+    NSLog(@"发表评论控制器释放");
+    
+    NSLog(@"self.navigationController:%@,数组%@  =====firstObject:%@ ====self.layoutTextView:%@",self.navigationController.viewControllers,self.publishPhotosView,self.layoutTextView,self.imagePickerController);
+    
+    self.layoutTextView = nil;
+    self.publishPhotosView = nil;
+    self.imagePickerController = nil;
+    
+    
+    NSLog(@"self.navigationController:%@,数组%@  =====firstObject:%@ ====self.layoutTextView:%@",self.navigationController.viewControllers,self.publishPhotosView,self.layoutTextView,self.imagePickerController);
+    NSLog(@"self.navigationController:%@,数组%@  =====firstObject:%@ ====self.layoutTextView:%@",self.navigationController,self.navigationController.viewControllers,[self.navigationController.viewControllers firstObject],self.layoutTextView);
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"testDeallocReleaseNotifi" object:nil];
 }
 @end

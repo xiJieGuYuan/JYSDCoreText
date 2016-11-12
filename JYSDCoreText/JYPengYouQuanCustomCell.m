@@ -96,6 +96,7 @@
     
     [self setupAutoHeightWithBottomView:_timeLabel bottomMargin:margin + 5];
     
+        
 }
 
 
