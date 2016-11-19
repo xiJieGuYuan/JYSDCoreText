@@ -11,6 +11,10 @@
 #import "baseAnimationViewController.h"
 #import "keyFrameAnimationViewController.h"
 #import "groupAnimationViewController.h"
+#import "transitionAnimationViewController.h"
+#import "affineTransformViewController.h"
+
+#import "comprehensiveCaseViewController.h"
 
 @interface coreAnimationListViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) UITableView * tableView;
@@ -112,6 +116,18 @@
             
         case 2:
             [self.navigationController pushViewController:[groupAnimationViewController new] animated:YES];
+            break;
+            
+        case 3:
+            [self.navigationController pushViewController:[transitionAnimationViewController new] animated:YES];
+            break;
+            
+        case 4:
+            [self.navigationController pushViewController:[affineTransformViewController new] animated:YES];
+            break;
+            
+        case 5:
+            [self.navigationController pushViewController:[comprehensiveCaseViewController new] animated:YES];
             break;
             
         default:

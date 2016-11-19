@@ -13,6 +13,7 @@
 
 #import "JYPengYouQuanViewController.h"//1.朋友圈
 #import "coreAnimationListViewController.h"//2.动画列表
+#import "bezierPathViewController.h" //3.绘图
 
 @interface ViewController ()
 
@@ -42,7 +43,7 @@
     
     
     __weak typeof(self) weakSelf = self;
-     NSArray * titleArray = @[@"1111",@"朋友圈",@"core animation"];
+     NSArray * titleArray = @[@"1111",@"朋友圈",@"core animation",@"bezierPath"];
     
     for (int i = 0; i < titleArray.count; i++) {
         
@@ -71,6 +72,11 @@
             
         case 2:
             [self.navigationController pushViewController:[coreAnimationListViewController new] animated:YES];
+            break;
+            
+            
+        case 3:
+            [self.navigationController pushViewController:[bezierPathViewController new] animated:YES];
             
             break;
             
