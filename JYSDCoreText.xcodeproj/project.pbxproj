@@ -54,10 +54,13 @@
 		4A69AC781DDEF89D00957C7B /* bloom.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4A69AC751DDEF89D00957C7B /* bloom.caf */; };
 		4A69AC791DDEF89D00957C7B /* fold.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4A69AC761DDEF89D00957C7B /* fold.caf */; };
 		4A69AC7A1DDEF89D00957C7B /* selected.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4A69AC771DDEF89D00957C7B /* selected.caf */; };
+		4A7E8C421DE05CF500EBC0BC /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E8C411DE05CF500EBC0BC /* testView.m */; };
 		4A7F856B1DE016C2001F4EC7 /* DWBubbleMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F856A1DE016C2001F4EC7 /* DWBubbleMenuButton.m */; };
 		4A7F85711DE016DD001F4EC7 /* MCFireworksButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F856E1DE016DD001F4EC7 /* MCFireworksButton.m */; };
 		4A7F85721DE016DD001F4EC7 /* MCFireworksView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F85701DE016DD001F4EC7 /* MCFireworksView.m */; };
 		4A7F85741DE021ED001F4EC7 /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7F85731DE021ED001F4EC7 /* text.png */; };
+		4A7F85781DE026B4001F4EC7 /* yaWeiImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F85771DE026B4001F4EC7 /* yaWeiImageViewController.m */; };
+		4A7F857C1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F857B1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.m */; };
 		4AB55DBF1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB55DBE1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m */; };
 		4AB55DC31DD709C400FF89B6 /* groupAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB55DC21DD709C400FF89B6 /* groupAnimationViewController.m */; };
 		4ABDF9971D685C060074C249 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABDF9961D685C060074C249 /* main.m */; };
@@ -210,6 +213,8 @@
 		4A69AC751DDEF89D00957C7B /* bloom.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bloom.caf; sourceTree = "<group>"; };
 		4A69AC761DDEF89D00957C7B /* fold.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fold.caf; sourceTree = "<group>"; };
 		4A69AC771DDEF89D00957C7B /* selected.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = selected.caf; sourceTree = "<group>"; };
+		4A7E8C401DE05CF500EBC0BC /* testView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testView.h; sourceTree = "<group>"; };
+		4A7E8C411DE05CF500EBC0BC /* testView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testView.m; sourceTree = "<group>"; };
 		4A7F85691DE016C2001F4EC7 /* DWBubbleMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBubbleMenuButton.h; sourceTree = "<group>"; };
 		4A7F856A1DE016C2001F4EC7 /* DWBubbleMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWBubbleMenuButton.m; sourceTree = "<group>"; };
 		4A7F856D1DE016DD001F4EC7 /* MCFireworksButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFireworksButton.h; sourceTree = "<group>"; };
@@ -217,6 +222,10 @@
 		4A7F856F1DE016DD001F4EC7 /* MCFireworksView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFireworksView.h; sourceTree = "<group>"; };
 		4A7F85701DE016DD001F4EC7 /* MCFireworksView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFireworksView.m; sourceTree = "<group>"; };
 		4A7F85731DE021ED001F4EC7 /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text.png; sourceTree = "<group>"; };
+		4A7F85761DE026B4001F4EC7 /* yaWeiImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yaWeiImageViewController.h; sourceTree = "<group>"; };
+		4A7F85771DE026B4001F4EC7 /* yaWeiImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yaWeiImageViewController.m; sourceTree = "<group>"; };
+		4A7F857A1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "A-GuideToIOSAnimationViewController.h"; sourceTree = "<group>"; };
+		4A7F857B1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "A-GuideToIOSAnimationViewController.m"; sourceTree = "<group>"; };
 		4AB55DBD1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyFrameAnimationViewController.h; sourceTree = "<group>"; };
 		4AB55DBE1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = keyFrameAnimationViewController.m; sourceTree = "<group>"; };
 		4AB55DC11DD709C400FF89B6 /* groupAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groupAnimationViewController.h; sourceTree = "<group>"; };
@@ -608,6 +617,31 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		4A7E8C3D1DE05CD100EBC0BC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		4A7E8C3E1DE05CD400EBC0BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E8C401DE05CF500EBC0BC /* testView.h */,
+				4A7E8C411DE05CF500EBC0BC /* testView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4A7E8C3F1DE05CD700EBC0BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4ADD46221DDB12BB00D8FD74 /* bezierPathViewController.h */,
+				4ADD46231DDB12BB00D8FD74 /* bezierPathViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		4A7F85681DE016C2001F4EC7 /* DWBubbleMenuButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -627,6 +661,24 @@
 				4A7F85701DE016DD001F4EC7 /* MCFireworksView.m */,
 			);
 			path = MCFireworksButton;
+			sourceTree = "<group>";
+		};
+		4A7F85751DE02635001F4EC7 /* 杂项 */ = {
+			isa = PBXGroup;
+			children = (
+				4A7F85761DE026B4001F4EC7 /* yaWeiImageViewController.h */,
+				4A7F85771DE026B4001F4EC7 /* yaWeiImageViewController.m */,
+			);
+			name = "杂项";
+			sourceTree = "<group>";
+		};
+		4A7F85791DE02767001F4EC7 /* A-GUIDE-TO-iOS-ANIMATION */ = {
+			isa = PBXGroup;
+			children = (
+				4A7F857A1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.h */,
+				4A7F857B1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.m */,
+			);
+			name = "A-GUIDE-TO-iOS-ANIMATION";
 			sourceTree = "<group>";
 		};
 		4AB55DBC1DD6FF8300FF89B6 /* 关键帧动画 */ = {
@@ -681,9 +733,11 @@
 				4ABDF99B1D685C060074C249 /* ViewController.h */,
 				4ABDF99C1D685C060074C249 /* ViewController.m */,
 				4A21A0CF1DD6EBE100A6DF11 /* baseVC */,
+				4A7F85751DE02635001F4EC7 /* 杂项 */,
 				4ABDFA061D6864AC0074C249 /* 朋友圈 */,
 				4A21A0BA1DD6E24000A6DF11 /* core animation */,
-				4ADD46211DDB126F00D8FD74 /* 绘图 */,
+				4ADD46211DDB126F00D8FD74 /* bezierPath */,
+				4A7F85791DE02767001F4EC7 /* A-GUIDE-TO-iOS-ANIMATION */,
 				4ABDF99E1D685C060074C249 /* Main.storyboard */,
 				4ABDF9A11D685C060074C249 /* Assets.xcassets */,
 				4ABDF9A31D685C060074C249 /* LaunchScreen.storyboard */,
@@ -888,13 +942,14 @@
 			name = "仿射变换";
 			sourceTree = "<group>";
 		};
-		4ADD46211DDB126F00D8FD74 /* 绘图 */ = {
+		4ADD46211DDB126F00D8FD74 /* bezierPath */ = {
 			isa = PBXGroup;
 			children = (
-				4ADD46221DDB12BB00D8FD74 /* bezierPathViewController.h */,
-				4ADD46231DDB12BB00D8FD74 /* bezierPathViewController.m */,
+				4A7E8C3F1DE05CD700EBC0BC /* Controller */,
+				4A7E8C3E1DE05CD400EBC0BC /* View */,
+				4A7E8C3D1DE05CD100EBC0BC /* New Group */,
 			);
-			name = "绘图";
+			name = bezierPath;
 			sourceTree = "<group>";
 		};
 		4AE94E0F1D7AC7430015EF5C /* images */ = {
@@ -1218,6 +1273,7 @@
 				4ADD46201DDAFDB300D8FD74 /* affineTransformViewController.m in Sources */,
 				4ADD46241DDB12BB00D8FD74 /* bezierPathViewController.m in Sources */,
 				4A69AC4C1DDEF72000957C7B /* DCPathItemButton.m in Sources */,
+				4A7F85781DE026B4001F4EC7 /* yaWeiImageViewController.m in Sources */,
 				4AE94E0E1D7AC5600015EF5C /* JYHeaderView.m in Sources */,
 				4AE94E421D7ADA7C0015EF5C /* SDPhotoBrowser.m in Sources */,
 				4AB55DBF1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m in Sources */,
@@ -1237,6 +1293,7 @@
 				4A43A3721DA8DABA00C22E2A /* UIImage+Color.m in Sources */,
 				4ABDF9EE1D6863350074C249 /* PYPhotosPreviewController.m in Sources */,
 				4ABDF9F01D6863350074C249 /* PYPhotosViewController.m in Sources */,
+				4A7F857C1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.m in Sources */,
 				4A50401A1D82A352001F1D7A /* EmojiToolBar.m in Sources */,
 				4A7F85711DE016DD001F4EC7 /* MCFireworksButton.m in Sources */,
 				4ABDF9F21D6863350074C249 /* PYConst.m in Sources */,
@@ -1244,6 +1301,7 @@
 				4AE94E431D7ADA7C0015EF5C /* SDWaitingView.m in Sources */,
 				4AB55DC31DD709C400FF89B6 /* groupAnimationViewController.m in Sources */,
 				4AE94E0B1D7AC3810015EF5C /* JYPengYouQuanViewController.m in Sources */,
+				4A7E8C421DE05CF500EBC0BC /* testView.m in Sources */,
 				4ABDF9971D685C060074C249 /* main.m in Sources */,
 				4A7F856B1DE016C2001F4EC7 /* DWBubbleMenuButton.m in Sources */,
 				4A50401E1D82A352001F1D7A /* HCEmojiKeyboard.m in Sources */,

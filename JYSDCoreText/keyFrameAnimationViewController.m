@@ -91,13 +91,11 @@
     
     UIBezierPath * path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(SCREEN_WIDTH/2 - 100, SCREEN_HEIGHT/2 - 100, 200, 200) ];
     
-    
-    
     anima.path = path.CGPath;
     anima.repeatCount = HUGE_VALL;
     anima.autoreverses = YES;
     anima.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-   anima.duration = 3.0f;
+    anima.duration = 3.0f;
     [_animationImageView.layer addAnimation:anima forKey:@"pathAnimationQQ"];
     
 }

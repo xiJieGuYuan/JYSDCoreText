@@ -11,6 +11,8 @@
 #import "UIView+SDAutoLayout.h"
 #import "JYSolidColorButton.h"
 
+#import "yaWeiImageViewController.h"//杂项
+
 #import "JYPengYouQuanViewController.h"//1.朋友圈
 #import "coreAnimationListViewController.h"//2.动画列表
 #import "bezierPathViewController.h" //3.绘图
@@ -43,7 +45,7 @@
     
     
     __weak typeof(self) weakSelf = self;
-     NSArray * titleArray = @[@"1111",@"朋友圈",@"core animation",@"bezierPath"];
+     NSArray * titleArray = @[@"杂项",@"朋友圈",@"core animation",@"bezierPath"];
     
     for (int i = 0; i < titleArray.count; i++) {
         
@@ -63,7 +65,7 @@
     
     switch (button.tag) {
         case 0:
-            [self.navigationController pushViewController:[JYPengYouQuanViewController new] animated:YES];
+            [self.navigationController pushViewController:[yaWeiImageViewController new] animated:YES];
             break;
             
         case 1:
