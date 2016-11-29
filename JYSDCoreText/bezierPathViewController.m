@@ -10,6 +10,8 @@
 
 #define degreesToRadians(degrees) ((degrees * (float)M_PI) / 180.0f)
 
+#define degressToCos(cos) (cos*180/M_PI)
+
 #import "bezierPathViewController.h"
 
 #import "testView.h"
@@ -26,6 +28,10 @@
 @property (strong, nonatomic) UIBezierPath * path;
 
 
+@property (assign, nonatomic) int clickCount;
+
+
+
 @end
 
 @implementation bezierPathViewController
@@ -39,6 +45,10 @@
     [self setupSubviews];
     
    [self createSubviews];
+    
+    
+    NSLog(@"cos:%.2f",cos(degreesToRadians(60)));
+    NSLog(@"acos:%.2f",degressToCos(acos(0.5)));
 }
 
 -(void)setNav{
@@ -99,6 +109,7 @@
 
 -(void)createSubviews{
     
+    
     UIButton * button  = [[UIButton alloc]initWithFrame:CGRectMake(60,self.view.frame.size.height - 60, 100, 40)];
     button.backgroundColor = [UIColor yellowColor];
     [button setTitle:@"动画路径" forState:UIControlStateNormal];
@@ -107,23 +118,44 @@
     [self.view addSubview:button];
     
     
-    self.animaView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
-    self.animaView.backgroundColor = [UIColor yellowColor];
-    [self.test addSubview:self.animaView];
+//    self.animaView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
+//    self.animaView.backgroundColor = [UIColor yellowColor];
+//    [self.test addSubview:self.animaView];
 }
 
 -(void)clickButton{
     
     NSLog(@"点击了按钮");
     
+    self.clickCount++;
+    
+    
+    UIButton * animaView = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
+    animaView.backgroundColor = [UIColor cyanColor];
+    [animaView setTitle:[NSString stringWithFormat:@"%d",self.clickCount] forState:UIControlStateNormal];
+    [self.test addSubview:animaView];
+    
+    
     CAKeyframeAnimation * anima = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     
     anima.path = (self.test.path).CGPath;
     anima.autoreverses = YES;
     anima.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
-    anima.duration = 3.0f;
+    anima.duration = 10.0f;
     
-    [self.animaView.layer addAnimation:anima forKey:@"pathAnimation"];
+    anima.rotationMode = kCAAnimationRotateAuto;
+    
+    [animaView.layer addAnimation:anima forKey:@"pathAnimation"];
+
+    
+//    CAKeyframeAnimation * anima = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+//    
+//    anima.path = (self.test.path).CGPath;
+//    anima.autoreverses = YES;
+//    anima.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+//    anima.duration = 3.0f;
+//    
+//    [self.animaView.layer addAnimation:anima forKey:@"pathAnimation"];
 }
 
 

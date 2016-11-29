@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0700251DE7DD01007446F5 /* testjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A0700241DE7DD01007446F5 /* testjson.json */; };
+		4A0700271DE7E370007446F5 /* createInDestop.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A0700261DE7E370007446F5 /* createInDestop.json */; };
+		4A21429D1DE80B5A00052CFB /* swimmingFishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21429C1DE80B5A00052CFB /* swimmingFishViewController.m */; };
 		4A21A0BF1DD6E29100A6DF11 /* coreAnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0BE1DD6E29100A6DF11 /* coreAnimationListViewController.m */; };
 		4A21A0C31DD6E89200A6DF11 /* baseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0C21DD6E89200A6DF11 /* baseAnimationViewController.m */; };
 		4A21A0CE1DD6EB5E00A6DF11 /* baseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0CD1DD6EB5E00A6DF11 /* baseViewController.m */; };
@@ -140,6 +143,10 @@
 /* Begin PBXFileReference section */
 		0A3AA4DF66008FCA3007009F /* Pods-JYSDCoreText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYSDCoreText.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYSDCoreText/Pods-JYSDCoreText.release.xcconfig"; sourceTree = "<group>"; };
 		39405C16FF6D29B9C572CC15 /* Pods-JYSDCoreText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYSDCoreText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYSDCoreText/Pods-JYSDCoreText.debug.xcconfig"; sourceTree = "<group>"; };
+		4A0700241DE7DD01007446F5 /* testjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testjson.json; sourceTree = "<group>"; };
+		4A0700261DE7E370007446F5 /* createInDestop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = createInDestop.json; sourceTree = "<group>"; };
+		4A21429B1DE80B5A00052CFB /* swimmingFishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swimmingFishViewController.h; sourceTree = "<group>"; };
+		4A21429C1DE80B5A00052CFB /* swimmingFishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = swimmingFishViewController.m; sourceTree = "<group>"; };
 		4A21A0BD1DD6E29100A6DF11 /* coreAnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coreAnimationListViewController.h; sourceTree = "<group>"; };
 		4A21A0BE1DD6E29100A6DF11 /* coreAnimationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = coreAnimationListViewController.m; sourceTree = "<group>"; };
 		4A21A0C11DD6E89200A6DF11 /* baseAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseAnimationViewController.h; sourceTree = "<group>"; };
@@ -359,6 +366,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4A0700281DE7E44A007446F5 /* 创建本地json */ = {
+			isa = PBXGroup;
+			children = (
+				4A0700261DE7E370007446F5 /* createInDestop.json */,
+				4A0700241DE7DD01007446F5 /* testjson.json */,
+			);
+			name = "创建本地json";
+			sourceTree = "<group>";
+		};
+		4A2142971DE80AAD00052CFB /* swimmingFish */ = {
+			isa = PBXGroup;
+			children = (
+				4A21429A1DE80AC900052CFB /* Controller */,
+				4A2142991DE80AC700052CFB /* category */,
+				4A2142981DE80AC400052CFB /* images */,
+			);
+			name = swimmingFish;
+			sourceTree = "<group>";
+		};
+		4A2142981DE80AC400052CFB /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		4A2142991DE80AC700052CFB /* category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
+		4A21429A1DE80AC900052CFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A21429B1DE80B5A00052CFB /* swimmingFishViewController.h */,
+				4A21429C1DE80B5A00052CFB /* swimmingFishViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		4A21A0B91DD6E21B00A6DF11 /* 朋友圈 */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +421,7 @@
 		4A21A0BA1DD6E24000A6DF11 /* core animation */ = {
 			isa = PBXGroup;
 			children = (
+				4A21A0CF1DD6EBE100A6DF11 /* coreAnimationBaseVC */,
 				4A21A0BB1DD6E26100A6DF11 /* coreAnimationList */,
 				4A21A0C01DD6E85900A6DF11 /* 基础动画 */,
 				4AB55DBC1DD6FF8300FF89B6 /* 关键帧动画 */,
@@ -409,7 +459,7 @@
 			name = tool;
 			sourceTree = "<group>";
 		};
-		4A21A0CF1DD6EBE100A6DF11 /* baseVC */ = {
+		4A21A0CF1DD6EBE100A6DF11 /* coreAnimationBaseVC */ = {
 			isa = PBXGroup;
 			children = (
 				4A21A0D01DD6EC0300A6DF11 /* TitleButton.h */,
@@ -417,7 +467,7 @@
 				4A21A0CC1DD6EB5E00A6DF11 /* baseViewController.h */,
 				4A21A0CD1DD6EB5E00A6DF11 /* baseViewController.m */,
 			);
-			name = baseVC;
+			name = coreAnimationBaseVC;
 			sourceTree = "<group>";
 		};
 		4A3643EE1DDEAD0D00477DE2 /* 综合案例 */ = {
@@ -732,16 +782,17 @@
 				4ABDF9991D685C060074C249 /* AppDelegate.m */,
 				4ABDF99B1D685C060074C249 /* ViewController.h */,
 				4ABDF99C1D685C060074C249 /* ViewController.m */,
-				4A21A0CF1DD6EBE100A6DF11 /* baseVC */,
 				4A7F85751DE02635001F4EC7 /* 杂项 */,
 				4ABDFA061D6864AC0074C249 /* 朋友圈 */,
 				4A21A0BA1DD6E24000A6DF11 /* core animation */,
 				4ADD46211DDB126F00D8FD74 /* bezierPath */,
 				4A7F85791DE02767001F4EC7 /* A-GUIDE-TO-iOS-ANIMATION */,
+				4A2142971DE80AAD00052CFB /* swimmingFish */,
 				4ABDF99E1D685C060074C249 /* Main.storyboard */,
 				4ABDF9A11D685C060074C249 /* Assets.xcassets */,
 				4ABDF9A31D685C060074C249 /* LaunchScreen.storyboard */,
 				4ABDF9A61D685C060074C249 /* Info.plist */,
+				4A0700281DE7E44A007446F5 /* 创建本地json */,
 				4ABDF9951D685C060074C249 /* Supporting Files */,
 			);
 			path = JYSDCoreText;
@@ -1174,10 +1225,12 @@
 				4AE94E201D7AC7580015EF5C /* pbg.jpg in Resources */,
 				4AE94E241D7AC7580015EF5C /* pic7.jpg in Resources */,
 				4ABDF9A21D685C060074C249 /* Assets.xcassets in Resources */,
+				4A0700271DE7E370007446F5 /* createInDestop.json in Resources */,
 				4A69AC681DDEF89200957C7B /* chooser-moment-icon-camera@2x.png in Resources */,
 				4A69AC701DDEF89200957C7B /* chooser-moment-icon-thought@2x.png in Resources */,
 				4A69AC6F1DDEF89200957C7B /* chooser-moment-icon-thought-highlighted@2x.png in Resources */,
 				4AE94E211D7AC7580015EF5C /* picon.jpg in Resources */,
+				4A0700251DE7DD01007446F5 /* testjson.json in Resources */,
 				4AE94E2B1D7AC7580015EF5C /* pic0.jpg in Resources */,
 				4AE94E251D7AC7580015EF5C /* pic8.jpg in Resources */,
 				4A69AC691DDEF89200957C7B /* chooser-moment-icon-music-highlighted@2x.png in Resources */,
@@ -1299,6 +1352,7 @@
 				4ABDF9F21D6863350074C249 /* PYConst.m in Sources */,
 				4AE94E321D7AC9C30015EF5C /* JYPengYouQuanModel.m in Sources */,
 				4AE94E431D7ADA7C0015EF5C /* SDWaitingView.m in Sources */,
+				4A21429D1DE80B5A00052CFB /* swimmingFishViewController.m in Sources */,
 				4AB55DC31DD709C400FF89B6 /* groupAnimationViewController.m in Sources */,
 				4AE94E0B1D7AC3810015EF5C /* JYPengYouQuanViewController.m in Sources */,
 				4A7E8C421DE05CF500EBC0BC /* testView.m in Sources */,
