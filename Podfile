@@ -18,4 +18,7 @@ pod 'BaiduMapKit'
 pod 'MJExtension'
 pod 'TZImagePickerController'
 
+pod 'ReactiveCocoa', '~> 4.2.2'
+use_frameworks!
+
 end

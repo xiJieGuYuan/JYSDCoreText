@@ -80,13 +80,15 @@
     NSLog(@"开始动画");
     button.enabled = NO;
     
+    [self.fishImageView.layer removeAnimationForKey:@"pathAnimationGroup"];
+
+    
 //    //1.绘制bezierPath路径
     UIBezierPath * path = [UIBezierPath bezierPathWithArcCenter:SwimmingCenter radius:(self.view.frame.size.width - 20)/2 startAngle:-M_PI_2 endAngle:3 * M_PI_2 clockwise:1];
     
     CAKeyframeAnimation * animaCycle = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     animaCycle.path = path.CGPath;
     animaCycle.calculationMode = @"cubicPaced";
-//  animaCycle.rotationMode = kCAAnimationRotateAuto;
 
     
     CABasicAnimation * animaRote = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
@@ -155,6 +157,8 @@
 
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
+    [self.fishImageView.layer removeAnimationForKey:@"swimmingFish"];
+    
     [self startSwimming];
     
 }
@@ -172,6 +176,7 @@
     animaGroup.animations = @[animaCycle];
     animaGroup.duration = self.pointMutArray.count * 0.1;
     animaGroup.fillMode = kCAFillModeForwards;
+
     
     animaGroup.removedOnCompletion = NO;
     [_fishImageView.layer addAnimation:animaGroup forKey:@"pathAnimationGroup"];
@@ -184,7 +189,6 @@
     
     [_fishImageView startAnimating];
     _startAnimationButton.enabled = YES;
-    
 }
 
 

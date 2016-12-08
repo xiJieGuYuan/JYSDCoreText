@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BBF86C4CC7053EEE9D02CE2 /* Pods_JYSDCoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870BF51050E608F1B64B7160 /* Pods_JYSDCoreText.framework */; };
 		4A0700251DE7DD01007446F5 /* testjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A0700241DE7DD01007446F5 /* testjson.json */; };
 		4A0700271DE7E370007446F5 /* createInDestop.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A0700261DE7E370007446F5 /* createInDestop.json */; };
+		4A1454D01DF7DA6400E0170A /* reactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1454CF1DF7DA6400E0170A /* reactiveCocoaViewController.m */; };
 		4A21429D1DE80B5A00052CFB /* swimmingFishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21429C1DE80B5A00052CFB /* swimmingFishViewController.m */; };
 		4A21A0BF1DD6E29100A6DF11 /* coreAnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0BE1DD6E29100A6DF11 /* coreAnimationListViewController.m */; };
 		4A21A0C31DD6E89200A6DF11 /* baseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0C21DD6E89200A6DF11 /* baseAnimationViewController.m */; };
@@ -120,7 +122,6 @@
 		4AE94E421D7ADA7C0015EF5C /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE94E3D1D7ADA7C0015EF5C /* SDPhotoBrowser.m */; };
 		4AE94E431D7ADA7C0015EF5C /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE94E401D7ADA7C0015EF5C /* SDWaitingView.m */; };
 		4AE94E4A1D7AE39A0015EF5C /* JYFaBiaoPingLunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE94E491D7AE39A0015EF5C /* JYFaBiaoPingLunViewController.m */; };
-		D4AC4EF8F4C150C7877017A0 /* libPods-JYSDCoreText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EAD7C14B0A55D8A487EF510 /* libPods-JYSDCoreText.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +146,9 @@
 		39405C16FF6D29B9C572CC15 /* Pods-JYSDCoreText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYSDCoreText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYSDCoreText/Pods-JYSDCoreText.debug.xcconfig"; sourceTree = "<group>"; };
 		4A0700241DE7DD01007446F5 /* testjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testjson.json; sourceTree = "<group>"; };
 		4A0700261DE7E370007446F5 /* createInDestop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = createInDestop.json; sourceTree = "<group>"; };
+		4A1454CE1DF7DA6400E0170A /* reactiveCocoaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reactiveCocoaViewController.h; sourceTree = "<group>"; };
+		4A1454CF1DF7DA6400E0170A /* reactiveCocoaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reactiveCocoaViewController.m; sourceTree = "<group>"; };
+		4A1454D11DF8046100E0170A /* LxDBAnything.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LxDBAnything.h; path = ../LxDBAnything.h; sourceTree = "<group>"; };
 		4A21429B1DE80B5A00052CFB /* swimmingFishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swimmingFishViewController.h; sourceTree = "<group>"; };
 		4A21429C1DE80B5A00052CFB /* swimmingFishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = swimmingFishViewController.m; sourceTree = "<group>"; };
 		4A21A0BD1DD6E29100A6DF11 /* coreAnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coreAnimationListViewController.h; sourceTree = "<group>"; };
@@ -329,7 +333,7 @@
 		4AE94E401D7ADA7C0015EF5C /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
 		4AE94E481D7AE39A0015EF5C /* JYFaBiaoPingLunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYFaBiaoPingLunViewController.h; sourceTree = "<group>"; };
 		4AE94E491D7AE39A0015EF5C /* JYFaBiaoPingLunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYFaBiaoPingLunViewController.m; sourceTree = "<group>"; };
-		9EAD7C14B0A55D8A487EF510 /* libPods-JYSDCoreText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JYSDCoreText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		870BF51050E608F1B64B7160 /* Pods_JYSDCoreText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYSDCoreText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,7 +341,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4AC4EF8F4C150C7877017A0 /* libPods-JYSDCoreText.a in Frameworks */,
+				2BBF86C4CC7053EEE9D02CE2 /* Pods_JYSDCoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +365,7 @@
 		057317B871BBFD3C380E6DBC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9EAD7C14B0A55D8A487EF510 /* libPods-JYSDCoreText.a */,
+				870BF51050E608F1B64B7160 /* Pods_JYSDCoreText.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -373,6 +377,23 @@
 				4A0700241DE7DD01007446F5 /* testjson.json */,
 			);
 			name = "创建本地json";
+			sourceTree = "<group>";
+		};
+		4A1454CC1DF7DA3700E0170A /* ReactiveCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				4A1454CD1DF7DA4600E0170A /* Controller */,
+			);
+			name = ReactiveCocoa;
+			sourceTree = "<group>";
+		};
+		4A1454CD1DF7DA4600E0170A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A1454CE1DF7DA6400E0170A /* reactiveCocoaViewController.h */,
+				4A1454CF1DF7DA6400E0170A /* reactiveCocoaViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		4A2142971DE80AAD00052CFB /* swimmingFish */ = {
@@ -788,9 +809,11 @@
 				4ADD46211DDB126F00D8FD74 /* bezierPath */,
 				4A7F85791DE02767001F4EC7 /* A-GUIDE-TO-iOS-ANIMATION */,
 				4A2142971DE80AAD00052CFB /* swimmingFish */,
+				4A1454CC1DF7DA3700E0170A /* ReactiveCocoa */,
 				4ABDF99E1D685C060074C249 /* Main.storyboard */,
 				4ABDF9A11D685C060074C249 /* Assets.xcassets */,
 				4ABDF9A31D685C060074C249 /* LaunchScreen.storyboard */,
+				4A1454D11DF8046100E0170A /* LxDBAnything.h */,
 				4ABDF9A61D685C060074C249 /* Info.plist */,
 				4A0700281DE7E44A007446F5 /* 创建本地json */,
 				4ABDF9951D685C060074C249 /* Supporting Files */,
@@ -1327,6 +1350,7 @@
 				4ADD46241DDB12BB00D8FD74 /* bezierPathViewController.m in Sources */,
 				4A69AC4C1DDEF72000957C7B /* DCPathItemButton.m in Sources */,
 				4A7F85781DE026B4001F4EC7 /* yaWeiImageViewController.m in Sources */,
+				4A1454D01DF7DA6400E0170A /* reactiveCocoaViewController.m in Sources */,
 				4AE94E0E1D7AC5600015EF5C /* JYHeaderView.m in Sources */,
 				4AE94E421D7ADA7C0015EF5C /* SDPhotoBrowser.m in Sources */,
 				4AB55DBF1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m in Sources */,

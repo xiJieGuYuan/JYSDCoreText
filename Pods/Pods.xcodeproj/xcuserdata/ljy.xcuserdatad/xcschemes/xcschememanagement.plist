@@ -24,6 +24,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Result.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDAutoLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0C7BDB118F3B772F8B833C796E416C7A</key>
+		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2412C4179DF8891DC914CB205F363B84</key>
+		<key>29DD99664D189A7CA206368F493B1E0B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>70BC44266C6FFE30D2C57129458E070B</key>
+		<key>3321D59E849423913B243BF90B17F801</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8DC67B40A7B8D2343F2C02377F8B0E10</key>
+		<key>45DD4FE6CF5236FA3D426CEBD1F44E11</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>928353533005A4198EBDA5B700D37B64</key>
+		<key>7C0126D717EB28DC6DB2EEA2E20B5172</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9EAB3E42EF957541E6C3C76D35FD008E</key>
+		<key>A2B20BF74DF9B0C60FC62A7DF2945E73</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DCE969C44BA7E6CB7C0F744303C0684E</key>
+		<key>A84BA14E47A5D51F537351050FC50F0B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E6A90BDE05F3BBC1D2366155D25C855A</key>
+		<key>D335BDE1DE7A0CBE7D0A9A89A6D4838B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D97F9EE704D69470A957A001E3D781E9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE8C6CA5EF1C45869EF9BDB9CD7ECD54</key>
 		<dict>
 			<key>primary</key>
 			<true/>

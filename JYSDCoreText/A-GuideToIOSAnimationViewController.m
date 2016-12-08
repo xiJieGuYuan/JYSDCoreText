@@ -8,6 +8,8 @@
 
 #import "A-GuideToIOSAnimationViewController.h"
 
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
 @interface A_GuideToIOSAnimationViewController ()
 
 @end
@@ -52,6 +54,9 @@
          animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
          animation.repeatCount = HUGE_VALF;
         [layer addAnimation:animation forKey:@"pulseAnimation"];
+    
+    
+        
 }
 
 

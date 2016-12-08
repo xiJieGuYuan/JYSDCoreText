@@ -109,7 +109,6 @@
 
 -(void)createSubviews{
     
-    
     UIButton * button  = [[UIButton alloc]initWithFrame:CGRectMake(60,self.view.frame.size.height - 60, 100, 40)];
     button.backgroundColor = [UIColor yellowColor];
     [button setTitle:@"动画路径" forState:UIControlStateNormal];

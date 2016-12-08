@@ -150,7 +150,6 @@
     }];
 }
 
-
 #pragma mark - 5.invertAnimation ->反转
 -(void)invertAnimation{
     
@@ -159,7 +158,6 @@
         
         _demoView.transform = CGAffineTransformInvert(CGAffineTransformMakeScale(2, 2));
     }];
-
 }
 
 

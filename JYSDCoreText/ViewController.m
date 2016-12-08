@@ -18,7 +18,9 @@
 #import "bezierPathViewController.h" //3.绘图
 #import "A-GuideToIOSAnimationViewController.h"//4
 
-#import "swimmingFishViewController.h"
+#import "swimmingFishViewController.h"//5.游泳的鱼
+
+#import "reactiveCocoaViewController.h"//6.reactiveCocoa
 
 @interface ViewController ()
 
@@ -56,7 +58,7 @@
 -(void)createCustomContents{
     
     __weak typeof(self) weakSelf = self;
-     NSArray * titleArray = @[@"杂项",@"friendTrends",@"core animation",@"bezierPath",@"A-GUIDE-TO-iOS-ANIMATION",@"swimmingFish"];
+     NSArray * titleArray = @[@"杂项",@"friendTrends",@"core animation",@"bezierPath",@"A-GUIDE-TO-iOS-ANIMATION",@"swimmingFish",@"ReactiveCocoa"];
     
     for (int i = 0; i < titleArray.count; i++) {
         
@@ -98,6 +100,10 @@
             
         case 5:
             [self.navigationController pushViewController:[swimmingFishViewController new] animated:YES];
+            break;
+            
+        case 6:
+            [self.navigationController pushViewController:[reactiveCocoaViewController new] animated:YES];
             break;
         
         default:
