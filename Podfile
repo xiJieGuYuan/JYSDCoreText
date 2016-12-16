@@ -18,7 +18,9 @@ pod 'BaiduMapKit'
 pod 'MJExtension'
 pod 'TZImagePickerController'
 
-pod 'ReactiveCocoa', '~> 4.2.2'
+pod 'ReactiveCocoa', '~>2.5'
 use_frameworks!
+
+ pod 'LinqToObjectiveC'
 
 end

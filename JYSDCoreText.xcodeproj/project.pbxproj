@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BBF86C4CC7053EEE9D02CE2 /* Pods_JYSDCoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870BF51050E608F1B64B7160 /* Pods_JYSDCoreText.framework */; };
+		33E2B0F9F911BFBD68A5503D /* Pods_JYSDCoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E80514A58126A4A7A314EF /* Pods_JYSDCoreText.framework */; };
 		4A0700251DE7DD01007446F5 /* testjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A0700241DE7DD01007446F5 /* testjson.json */; };
 		4A0700271DE7E370007446F5 /* createInDestop.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A0700261DE7E370007446F5 /* createInDestop.json */; };
 		4A1454D01DF7DA6400E0170A /* reactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1454CF1DF7DA6400E0170A /* reactiveCocoaViewController.m */; };
+		4A16C7721E026EE100D5DBF0 /* searchFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C7711E026EE100D5DBF0 /* searchFromViewController.m */; };
+		4A16C7741E02702000D5DBF0 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A16C7731E02702000D5DBF0 /* background.jpg */; };
+		4A16C7771E02706300D5DBF0 /* searchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C7761E02706300D5DBF0 /* searchResultsTableViewController.m */; };
+		4A16C77A1E02728C00D5DBF0 /* tweetsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C7791E02728C00D5DBF0 /* tweetsModel.m */; };
+		4A16C77D1E027A4D00D5DBF0 /* searchRestultsCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C77C1E027A4D00D5DBF0 /* searchRestultsCustomCell.m */; };
 		4A21429D1DE80B5A00052CFB /* swimmingFishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21429C1DE80B5A00052CFB /* swimmingFishViewController.m */; };
 		4A21A0BF1DD6E29100A6DF11 /* coreAnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0BE1DD6E29100A6DF11 /* coreAnimationListViewController.m */; };
 		4A21A0C31DD6E89200A6DF11 /* baseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0C21DD6E89200A6DF11 /* baseAnimationViewController.m */; };
 		4A21A0CE1DD6EB5E00A6DF11 /* baseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0CD1DD6EB5E00A6DF11 /* baseViewController.m */; };
 		4A21A0D21DD6EC0300A6DF11 /* TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0D11DD6EC0300A6DF11 /* TitleButton.m */; };
+		4A2B589D1DFFD6F8001418A6 /* logInRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B589C1DFFD6F8001418A6 /* logInRACViewController.m */; };
+		4A2B58A01DFFE14D001418A6 /* signInService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B589F1DFFE14D001418A6 /* signInService.m */; };
 		4A3643F11DDEADA000477DE2 /* comprehensiveCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3643F01DDEADA000477DE2 /* comprehensiveCaseViewController.m */; };
+		4A3A00D51DFFCEDD002A6A23 /* racListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A00D41DFFCEDD002A6A23 /* racListViewController.m */; };
 		4A43A36C1DA8D4DA00C22E2A /* UIButton+Delay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A43A3691DA8D4DA00C22E2A /* UIButton+Delay.m */; };
 		4A43A36D1DA8D4DA00C22E2A /* UIButton+touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A43A36B1DA8D4DA00C22E2A /* UIButton+touch.m */; };
 		4A43A3721DA8DABA00C22E2A /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A43A3711DA8DABA00C22E2A /* UIImage+Color.m */; };
@@ -143,12 +151,22 @@
 
 /* Begin PBXFileReference section */
 		0A3AA4DF66008FCA3007009F /* Pods-JYSDCoreText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYSDCoreText.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYSDCoreText/Pods-JYSDCoreText.release.xcconfig"; sourceTree = "<group>"; };
+		28E80514A58126A4A7A314EF /* Pods_JYSDCoreText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYSDCoreText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39405C16FF6D29B9C572CC15 /* Pods-JYSDCoreText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYSDCoreText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYSDCoreText/Pods-JYSDCoreText.debug.xcconfig"; sourceTree = "<group>"; };
 		4A0700241DE7DD01007446F5 /* testjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testjson.json; sourceTree = "<group>"; };
 		4A0700261DE7E370007446F5 /* createInDestop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = createInDestop.json; sourceTree = "<group>"; };
 		4A1454CE1DF7DA6400E0170A /* reactiveCocoaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reactiveCocoaViewController.h; sourceTree = "<group>"; };
 		4A1454CF1DF7DA6400E0170A /* reactiveCocoaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reactiveCocoaViewController.m; sourceTree = "<group>"; };
 		4A1454D11DF8046100E0170A /* LxDBAnything.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LxDBAnything.h; path = ../LxDBAnything.h; sourceTree = "<group>"; };
+		4A16C7701E026EE100D5DBF0 /* searchFromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchFromViewController.h; sourceTree = "<group>"; };
+		4A16C7711E026EE100D5DBF0 /* searchFromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchFromViewController.m; sourceTree = "<group>"; };
+		4A16C7731E02702000D5DBF0 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		4A16C7751E02706300D5DBF0 /* searchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchResultsTableViewController.h; sourceTree = "<group>"; };
+		4A16C7761E02706300D5DBF0 /* searchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchResultsTableViewController.m; sourceTree = "<group>"; };
+		4A16C7781E02728C00D5DBF0 /* tweetsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tweetsModel.h; sourceTree = "<group>"; };
+		4A16C7791E02728C00D5DBF0 /* tweetsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tweetsModel.m; sourceTree = "<group>"; };
+		4A16C77B1E027A4D00D5DBF0 /* searchRestultsCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchRestultsCustomCell.h; sourceTree = "<group>"; };
+		4A16C77C1E027A4D00D5DBF0 /* searchRestultsCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchRestultsCustomCell.m; sourceTree = "<group>"; };
 		4A21429B1DE80B5A00052CFB /* swimmingFishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swimmingFishViewController.h; sourceTree = "<group>"; };
 		4A21429C1DE80B5A00052CFB /* swimmingFishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = swimmingFishViewController.m; sourceTree = "<group>"; };
 		4A21A0BD1DD6E29100A6DF11 /* coreAnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coreAnimationListViewController.h; sourceTree = "<group>"; };
@@ -160,8 +178,14 @@
 		4A21A0CD1DD6EB5E00A6DF11 /* baseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseViewController.m; sourceTree = "<group>"; };
 		4A21A0D01DD6EC0300A6DF11 /* TitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleButton.h; sourceTree = "<group>"; };
 		4A21A0D11DD6EC0300A6DF11 /* TitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleButton.m; sourceTree = "<group>"; };
+		4A2B589B1DFFD6F8001418A6 /* logInRACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logInRACViewController.h; sourceTree = "<group>"; };
+		4A2B589C1DFFD6F8001418A6 /* logInRACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logInRACViewController.m; sourceTree = "<group>"; };
+		4A2B589E1DFFE14D001418A6 /* signInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = signInService.h; sourceTree = "<group>"; };
+		4A2B589F1DFFE14D001418A6 /* signInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = signInService.m; sourceTree = "<group>"; };
 		4A3643EF1DDEADA000477DE2 /* comprehensiveCaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comprehensiveCaseViewController.h; sourceTree = "<group>"; };
 		4A3643F01DDEADA000477DE2 /* comprehensiveCaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comprehensiveCaseViewController.m; sourceTree = "<group>"; };
+		4A3A00D31DFFCEDD002A6A23 /* racListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = racListViewController.h; sourceTree = "<group>"; };
+		4A3A00D41DFFCEDD002A6A23 /* racListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = racListViewController.m; sourceTree = "<group>"; };
 		4A43A3681DA8D4DA00C22E2A /* UIButton+Delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Delay.h"; sourceTree = "<group>"; };
 		4A43A3691DA8D4DA00C22E2A /* UIButton+Delay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Delay.m"; sourceTree = "<group>"; };
 		4A43A36A1DA8D4DA00C22E2A /* UIButton+touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+touch.h"; sourceTree = "<group>"; };
@@ -333,7 +357,6 @@
 		4AE94E401D7ADA7C0015EF5C /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
 		4AE94E481D7AE39A0015EF5C /* JYFaBiaoPingLunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYFaBiaoPingLunViewController.h; sourceTree = "<group>"; };
 		4AE94E491D7AE39A0015EF5C /* JYFaBiaoPingLunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYFaBiaoPingLunViewController.m; sourceTree = "<group>"; };
-		870BF51050E608F1B64B7160 /* Pods_JYSDCoreText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYSDCoreText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,7 +364,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BBF86C4CC7053EEE9D02CE2 /* Pods_JYSDCoreText.framework in Frameworks */,
+				33E2B0F9F911BFBD68A5503D /* Pods_JYSDCoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +388,7 @@
 		057317B871BBFD3C380E6DBC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				870BF51050E608F1B64B7160 /* Pods_JYSDCoreText.framework */,
+				28E80514A58126A4A7A314EF /* Pods_JYSDCoreText.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -382,16 +405,60 @@
 		4A1454CC1DF7DA3700E0170A /* ReactiveCocoa */ = {
 			isa = PBXGroup;
 			children = (
-				4A1454CD1DF7DA4600E0170A /* Controller */,
+				4A3A00D11DFFCEAB002A6A23 /* Controller */,
+				4A3A00D21DFFCEC3002A6A23 /* listRAC */,
+				4A1454CD1DF7DA4600E0170A /* funcRAC */,
+				4A3A00D01DFFCE71002A6A23 /* logInRAC */,
+				4A16C76C1E026E8600D5DBF0 /* TwitterInstantRAC */,
 			);
 			name = ReactiveCocoa;
 			sourceTree = "<group>";
 		};
-		4A1454CD1DF7DA4600E0170A /* Controller */ = {
+		4A1454CD1DF7DA4600E0170A /* funcRAC */ = {
 			isa = PBXGroup;
 			children = (
 				4A1454CE1DF7DA6400E0170A /* reactiveCocoaViewController.h */,
 				4A1454CF1DF7DA6400E0170A /* reactiveCocoaViewController.m */,
+			);
+			name = funcRAC;
+			sourceTree = "<group>";
+		};
+		4A16C76C1E026E8600D5DBF0 /* TwitterInstantRAC */ = {
+			isa = PBXGroup;
+			children = (
+				4A16C76F1E026EAB00D5DBF0 /* Controller */,
+				4A16C76E1E026EA800D5DBF0 /* View */,
+				4A16C76D1E026EA600D5DBF0 /* Model */,
+				4A16C7731E02702000D5DBF0 /* background.jpg */,
+			);
+			name = TwitterInstantRAC;
+			sourceTree = "<group>";
+		};
+		4A16C76D1E026EA600D5DBF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A16C7781E02728C00D5DBF0 /* tweetsModel.h */,
+				4A16C7791E02728C00D5DBF0 /* tweetsModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4A16C76E1E026EA800D5DBF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A16C77B1E027A4D00D5DBF0 /* searchRestultsCustomCell.h */,
+				4A16C77C1E027A4D00D5DBF0 /* searchRestultsCustomCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4A16C76F1E026EAB00D5DBF0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A16C7701E026EE100D5DBF0 /* searchFromViewController.h */,
+				4A16C7711E026EE100D5DBF0 /* searchFromViewController.m */,
+				4A16C7751E02706300D5DBF0 /* searchResultsTableViewController.h */,
+				4A16C7761E02706300D5DBF0 /* searchResultsTableViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -498,6 +565,33 @@
 				4A69AC421DDEF6F500957C7B /* thirdFiles */,
 			);
 			name = "综合案例";
+			sourceTree = "<group>";
+		};
+		4A3A00D01DFFCE71002A6A23 /* logInRAC */ = {
+			isa = PBXGroup;
+			children = (
+				4A2B589B1DFFD6F8001418A6 /* logInRACViewController.h */,
+				4A2B589C1DFFD6F8001418A6 /* logInRACViewController.m */,
+				4A2B589E1DFFE14D001418A6 /* signInService.h */,
+				4A2B589F1DFFE14D001418A6 /* signInService.m */,
+			);
+			name = logInRAC;
+			sourceTree = "<group>";
+		};
+		4A3A00D11DFFCEAB002A6A23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4A3A00D21DFFCEC3002A6A23 /* listRAC */ = {
+			isa = PBXGroup;
+			children = (
+				4A3A00D31DFFCEDD002A6A23 /* racListViewController.h */,
+				4A3A00D41DFFCEDD002A6A23 /* racListViewController.m */,
+			);
+			name = listRAC;
 			sourceTree = "<group>";
 		};
 		4A43A3671DA8D4DA00C22E2A /* UIButton-touch(防暴点击) */ = {
@@ -1176,6 +1270,7 @@
 					4ABDF9911D685C060074C249 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = W46LMX8S7P;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					4ABDF9AA1D685C060074C249 = {
@@ -1258,6 +1353,7 @@
 				4AE94E251D7AC7580015EF5C /* pic8.jpg in Resources */,
 				4A69AC691DDEF89200957C7B /* chooser-moment-icon-music-highlighted@2x.png in Resources */,
 				4ABDF9A01D685C060074C249 /* Main.storyboard in Resources */,
+				4A16C7741E02702000D5DBF0 /* background.jpg in Resources */,
 				4AE94E291D7AC7580015EF5C /* icon3.jpg in Resources */,
 				4A69AC6B1DDEF89200957C7B /* chooser-moment-icon-place-highlighted@2x.png in Resources */,
 			);
@@ -1343,10 +1439,12 @@
 				4AE94E4A1D7AE39A0015EF5C /* JYFaBiaoPingLunViewController.m in Sources */,
 				4ABDF9FF1D68638D0074C249 /* DALabeledCircularProgressView.m in Sources */,
 				4A5040251D82A352001F1D7A /* UIView+Frame.m in Sources */,
+				4A2B58A01DFFE14D001418A6 /* signInService.m in Sources */,
 				4AE94E411D7ADA7C0015EF5C /* SDBrowserImageView.m in Sources */,
 				4ABDF9F31D6863350074C249 /* PYProgressView.m in Sources */,
 				4ABDF9F61D6863350074C249 /* PYPhotoCell.m in Sources */,
 				4ADD46201DDAFDB300D8FD74 /* affineTransformViewController.m in Sources */,
+				4A3A00D51DFFCEDD002A6A23 /* racListViewController.m in Sources */,
 				4ADD46241DDB12BB00D8FD74 /* bezierPathViewController.m in Sources */,
 				4A69AC4C1DDEF72000957C7B /* DCPathItemButton.m in Sources */,
 				4A7F85781DE026B4001F4EC7 /* yaWeiImageViewController.m in Sources */,
@@ -1364,14 +1462,17 @@
 				4ABDF9F81D6863350074C249 /* PYPhotoView.m in Sources */,
 				4A50401F1D82A352001F1D7A /* HCEmojiManager.m in Sources */,
 				4A21A0CE1DD6EB5E00A6DF11 /* baseViewController.m in Sources */,
+				4A2B589D1DFFD6F8001418A6 /* logInRACViewController.m in Sources */,
 				4ABDF9EF1D6863350074C249 /* PYPhotosReaderController.m in Sources */,
 				4A3643F11DDEADA000477DE2 /* comprehensiveCaseViewController.m in Sources */,
+				4A16C7721E026EE100D5DBF0 /* searchFromViewController.m in Sources */,
 				4ABDF9EB1D6863350074C249 /* MBProgressHUD+PY.m in Sources */,
 				4A43A3721DA8DABA00C22E2A /* UIImage+Color.m in Sources */,
 				4ABDF9EE1D6863350074C249 /* PYPhotosPreviewController.m in Sources */,
 				4ABDF9F01D6863350074C249 /* PYPhotosViewController.m in Sources */,
 				4A7F857C1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.m in Sources */,
 				4A50401A1D82A352001F1D7A /* EmojiToolBar.m in Sources */,
+				4A16C77D1E027A4D00D5DBF0 /* searchRestultsCustomCell.m in Sources */,
 				4A7F85711DE016DD001F4EC7 /* MCFireworksButton.m in Sources */,
 				4ABDF9F21D6863350074C249 /* PYConst.m in Sources */,
 				4AE94E321D7AC9C30015EF5C /* JYPengYouQuanModel.m in Sources */,
@@ -1381,11 +1482,13 @@
 				4AE94E0B1D7AC3810015EF5C /* JYPengYouQuanViewController.m in Sources */,
 				4A7E8C421DE05CF500EBC0BC /* testView.m in Sources */,
 				4ABDF9971D685C060074C249 /* main.m in Sources */,
+				4A16C77A1E02728C00D5DBF0 /* tweetsModel.m in Sources */,
 				4A7F856B1DE016C2001F4EC7 /* DWBubbleMenuButton.m in Sources */,
 				4A50401E1D82A352001F1D7A /* HCEmojiKeyboard.m in Sources */,
 				4ADD461C1DDAB7B300D8FD74 /* transitionAnimationViewController.m in Sources */,
 				4ABDF9FE1D68638D0074C249 /* DACircularProgressView.m in Sources */,
 				4A50401B1D82A352001F1D7A /* EmojiCell.m in Sources */,
+				4A16C7771E02706300D5DBF0 /* searchResultsTableViewController.m in Sources */,
 				4ABDF9ED1D6863350074C249 /* PYNavigationController.m in Sources */,
 				4A5040211D82A352001F1D7A /* HCInputBar.m in Sources */,
 				4A43A36C1DA8D4DA00C22E2A /* UIButton+Delay.m in Sources */,
@@ -1544,6 +1647,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ReYun.JYSDCoreText.new;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1560,6 +1664,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ReYun.JYSDCoreText.new;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

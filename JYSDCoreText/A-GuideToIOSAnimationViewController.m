@@ -8,7 +8,6 @@
 
 #import "A-GuideToIOSAnimationViewController.h"
 
-#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface A_GuideToIOSAnimationViewController ()
 

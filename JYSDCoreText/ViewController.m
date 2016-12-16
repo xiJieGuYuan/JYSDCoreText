@@ -20,7 +20,9 @@
 
 #import "swimmingFishViewController.h"//5.游泳的鱼
 
-#import "reactiveCocoaViewController.h"//6.reactiveCocoa
+//#import "reactiveCocoaViewController.h"//.reactiveCocoa
+
+#import "racListViewController.h"//6.racListVC
 
 @interface ViewController ()
 
@@ -103,7 +105,7 @@
             break;
             
         case 6:
-            [self.navigationController pushViewController:[reactiveCocoaViewController new] animated:YES];
+            [self.navigationController pushViewController:[racListViewController new] animated:YES];
             break;
         
         default:

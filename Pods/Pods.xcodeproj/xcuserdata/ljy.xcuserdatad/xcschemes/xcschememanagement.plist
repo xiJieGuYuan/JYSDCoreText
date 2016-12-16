@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LinqToObjectiveC.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -25,11 +30,6 @@
 			<false/>
 		</dict>
 		<key>ReactiveCocoa.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Result.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -57,7 +57,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>06D2F77D59A90093FCF1CE90E0EABB0A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>08DD8A0733CCC61CD26FC53D25C8BD4C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>08F2BCCAF85E08C30B1428C1B6C6DD7E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>214B33D4BF82DC3F7874E17B74B302EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +87,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3321D59E849423913B243BF90B17F801</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>45DD4FE6CF5236FA3D426CEBD1F44E11</key>
+		<key>654A370006B459D3E7D87E2A0C0F03A6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,27 +97,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A2B20BF74DF9B0C60FC62A7DF2945E73</key>
+		<key>B6A2A8DA4116A73E731FD7E31F2507D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A84BA14E47A5D51F537351050FC50F0B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D335BDE1DE7A0CBE7D0A9A89A6D4838B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D97F9EE704D69470A957A001E3D781E9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DE8C6CA5EF1C45869EF9BDB9CD7ECD54</key>
+		<key>BD35F2BD1DFEB5E38138DC54DCBE40A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
