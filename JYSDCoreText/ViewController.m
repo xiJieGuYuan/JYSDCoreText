@@ -20,15 +20,39 @@
 
 #import "swimmingFishViewController.h"//5.游泳的鱼
 
-//#import "reactiveCocoaViewController.h"//.reactiveCocoa
-
 #import "racListViewController.h"//6.racListVC
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+
+@property (strong, nonatomic) UITableView * tableView;
+
+
+@property (strong, nonatomic) NSArray * leftTitleArray;
+
 
 @end
 
 @implementation ViewController
+
+/*
+ 
+ 
+ NSArray * titleArray = @[@"杂项",@"friendTrends",@"core animation",@"bezierPath",@"A-GUIDE-TO-iOS-ANIMATION",@"swimmingFish",@"ReactiveCocoa"];
+ 
+ 
+ 
+ */
+
+
+-(NSArray *)leftTitleArray{
+    
+    if (!_leftTitleArray) {
+        _leftTitleArray = @[@"杂项",@"friendTrends",@"core animation",@"bezierPath",@"A-GUIDE-TO-iOS-ANIMATION",@"swimmingFish",@"ReactiveCocoa"];
+    }
+    
+    return _leftTitleArray;
+}
 
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -42,43 +66,82 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setNav];
+    [self createTableView];
+}
+
+
+-(void)setNav{
+    
     self.title = @"首页";
     self.view.backgroundColor = [UIColor whiteColor];
-    [self createCustomContents];
     
-   
+    
     /*  创建.json文件两种方法
      
-        1.xcode command + N  选择 strings File  创建一个文件 修改后缀名为.json  testjson -->在Xcode中创建
-        2.在桌面创建一个文本 修改后缀名为.json,拖进Xcode即可                createInDestop -->在桌面创建
+     1.xcode command + N  选择 strings File  创建一个文件 修改后缀名为.json  testjson -->在Xcode中创建
+     2.在桌面创建一个文本 修改后缀名为.json,拖进Xcode即可                createInDestop -->在桌面创建
      */
     NSString *path = [[NSBundle mainBundle] pathForResource:@"testjson" ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:path];
     NSDictionary *rootDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+
 }
 
--(void)createCustomContents{
+#pragma mark - 创建tableView
+-(void)createTableView{
     
-    __weak typeof(self) weakSelf = self;
-     NSArray * titleArray = @[@"杂项",@"friendTrends",@"core animation",@"bezierPath",@"A-GUIDE-TO-iOS-ANIMATION",@"swimmingFish",@"ReactiveCocoa"];
-    
-    for (int i = 0; i < titleArray.count; i++) {
-        
-        JYSolidColorButton  * button = [JYSolidColorButton initWithFrame:CGRectNull buttonTitle:titleArray[i] normalBGColor:[UIColor orangeColor] selectBGColor:[UIColor orangeColor] normalColor:nil selectColor:nil buttonFont:[UIFont systemFontOfSize:14.0f] cornerRadius:3.0f doneBlock:^(UIButton *button) {
-            
-            NSLog(@"点击按钮的button.tag:%ld",button.tag);
-            [weakSelf clickAllButton:button];
+    self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    [self.view addSubview:_tableView];
+}
 
-        }];
-        [self.view addSubview:button];
-        button.sd_layout.centerXEqualToView(self.view).widthIs(250).heightIs(30).topSpaceToView(self.view,100 + 60 * i);
-        button.tag = i;
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return self.leftTitleArray.count;
+}
+
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString * cellID  = @"viewControllerCellID";
+    
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
+    
+    cell.textLabel.text = self.leftTitleArray[indexPath.row];
+    cell.textLabel.font = [UIFont systemFontOfSize:14.0f];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
 }
 
--(void)clickAllButton:(UIButton *)button{
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    switch (button.tag) {
+    return 44;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    return CGFLOAT_MIN;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    
+    return CGFLOAT_MIN;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    switch (indexPath.row) {
         case 0:
             [self.navigationController pushViewController:[yaWeiImageViewController new] animated:YES];
             break;
@@ -90,11 +153,11 @@
         case 2:
             [self.navigationController pushViewController:[coreAnimationListViewController new] animated:YES];
             break;
-        
+            
         case 3:
             [self.navigationController pushViewController:[bezierPathViewController new] animated:YES];
             break;
-        
+            
         case 4:
             [self.navigationController pushViewController:[A_GuideToIOSAnimationViewController new] animated:YES];
             break;
@@ -107,9 +170,10 @@
         case 6:
             [self.navigationController pushViewController:[racListViewController new] animated:YES];
             break;
-        
+            
         default:
             break;
     }
 }
+
 @end

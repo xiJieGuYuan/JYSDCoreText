@@ -17,6 +17,18 @@
 #import "searchFromViewController.h"//searchVC
 
 
+#import "targetActionRACViewController.h"//targetActionVC
+#import "delegateRACViewController.h" //delegateRAC
+#import "blockRACViewController.h"//blockRAC
+#import "notificaitonRACViewController.h"//notificationRAC
+#import "kvoRACViewController.h" //kvoRAC
+
+#import "requestViewController.h"//afnRAC
+
+
+
+
+
 @interface racListViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 
@@ -32,7 +44,7 @@
 -(NSArray *)leftArray{
     
     if (!_leftArray) {
-        _leftArray = @[@"funcRAC",@"logIdRAC",@"TwitterInstantRAC"];
+        _leftArray = @[@"funcRAC",@"logInRAC",@"TwitterInstantRAC",@"targetActionRAC",@"delegateRAC",@"blockRAC",@"notificationRAC",@"kvoRAC",@"afnRAC"];
     }
     return _leftArray;
 }
@@ -45,8 +57,12 @@
 
 -(void)setNav{
     
-    self.title = @"listRAC";
+    self.title = @"learnListRAC";
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    NSNotification *notification =[NSNotification notificationWithName:@"tongzhi" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotification:notification];
+
 }
 
 -(void)createTableView{
@@ -101,6 +117,7 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+
     switch (indexPath.row) {
             case 0:
             [self.navigationController pushViewController:[reactiveCocoaViewController new] animated:YES];
@@ -110,9 +127,32 @@
             [self.navigationController pushViewController:[logInRACViewController new] animated:YES];
             break;
             
-            
             case 2:
             [self.navigationController pushViewController:[searchFromViewController new] animated:YES];
+            break;
+            
+            case 3:
+            [self.navigationController pushViewController:[targetActionRACViewController new] animated:YES];
+            break;
+            
+            
+            case 4:
+            [self.navigationController pushViewController:[delegateRACViewController new] animated:YES];
+            break;
+            
+            case 5:
+            [self.navigationController pushViewController:[blockRACViewController new] animated:YES];
+            break;
+            
+            case 6:
+            [self.navigationController pushViewController:[notificaitonRACViewController new] animated:YES];
+            break;
+            
+            case 7:
+            [self.navigationController pushViewController:[kvoRACViewController new] animated:YES];
+            
+            case 8:
+            [self.navigationController pushViewController:[requestViewController new] animated:YES];
             break;
             
         default:

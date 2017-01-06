@@ -33,8 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor yellowColor];
-    self.tableView.backgroundColor = [UIColor cyanColor];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 
@@ -59,39 +58,18 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     searchRestultsCustomCell * cell = [searchRestultsCustomCell cellWithTableView:tableView];
-  
     tweetsModel * model = self.tweets[indexPath.row];
     
-    cell.twitterStatusText.text = model.status;
-    cell.twitterUserNameText.text = [NSString stringWithFormat:@"@%@",model.username];
+    [cell setCustomCellWithModel:model];
     
+//    cell.twitterStatusText.text = model.status;
+//    cell.twitterUserNameText.text = [NSString stringWithFormat:@"@%@",model.username];
+//    
 //    
 //    cell.twitterAvatarView.image = nil;
-//    [[[self signalForLoadingImage:model.profileImageUrl] deliverOn:[RACScheduler mainThreadScheduler]] subscribeNext:^(UIImage * image) {
-//        
+//    [[[[self signalForLoadingImage:model.profileImageUrl] takeUntil:cell.rac_prepareForReuseSignal ]deliverOn:[RACScheduler mainThreadScheduler]] subscribeNext:^(UIImage * image) {
 //        cell.twitterAvatarView.image = image;
 //    }];
-    
-//    cell.twitterAvatarView.image = nil;
-    
-    
-   // NSURL * url = [NSURL URLWithString:model.profileImageUrl];
-    
-    //[cell.twitterAvatarView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"icon3.jpg"]];
-//    [[[self signalForLoadingImage:model.profileImageUrl]
-//      deliverOn:[RACScheduler mainThreadScheduler]]
-//     
-//     subscribeNext:^(UIImage *image) {
-////         cell.twitterAvatarView.image = image;
-//         
-//         
-//         
-//     }];
-    
-    
-    [[[[self signalForLoadingImage:model.profileImageUrl] takeUntil:cell.rac_prepareForReuseSignal ]deliverOn:[RACScheduler mainThreadScheduler]] subscribeNext:^(UIImage * image) {
-        cell.twitterAvatarView.image = image;
-    }];
     
     return cell;
 }
@@ -103,35 +81,20 @@
 }
 
 
-//异步加载图片
--(RACSignal *)signalForLoadingImage:(NSString * )imageUrl{
-    
-    
-    
-    RACScheduler *scheduler = [RACScheduler
-                               schedulerWithPriority:RACSchedulerPriorityBackground];
-    
-    return [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
-        UIImage *image = [UIImage imageWithData:data];
-        [subscriber sendNext:image];
-        [subscriber sendCompleted];
-        return nil;
-    }] subscribeOn:scheduler];
-    
-//    RACScheduler * scheduler = [RACScheduler schedulerWithPriority:RACSchedulerPriorityBackground ];
+////异步加载图片
+//-(RACSignal *)signalForLoadingImage:(NSString * )imageUrl{
+//    
+//    RACScheduler *scheduler = [RACScheduler
+//                               schedulerWithPriority:RACSchedulerPriorityBackground];
 //    
 //    return [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-//        NSData * data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
-//        UIImage * image = [UIImage imageWithData:data];
-//        
+//        NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
+//        UIImage *image = [UIImage imageWithData:data];
 //        [subscriber sendNext:image];
 //        [subscriber sendCompleted];
 //        return nil;
-//        
 //    }] subscribeOn:scheduler];
-    
-}
+//}
 
 
 @end

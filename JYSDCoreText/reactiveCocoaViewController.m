@@ -479,7 +479,6 @@
     
     
     @weakify(self);
-    
     label.sd_layout
     .leftSpaceToView(self.view,70)
     .topSpaceToView(self.view,460)
@@ -491,7 +490,5 @@
         return date.description;
     }];
 }
-
-
 
 @end

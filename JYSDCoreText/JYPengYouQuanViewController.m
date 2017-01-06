@@ -85,7 +85,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    self.tableView.sectionFooterHeight = CGFLOAT_MIN; //1. 这两句代码写在这里,设置高度不起作用
+//    self.tableView.sectionFooterHeight = CGFLOAT_MIN; //1. 这两句代码写在这里,设置高度不起作用
     [self.view addSubview:self.tableView];
 }
 

@@ -8,22 +8,18 @@
 
 #import "searchFromViewController.h"
 
-
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "UIView+SDAutoLayout.h"
 #import "NSArray+LinqExtensions.h"
 #import "tweetsModel.h"
-
-
 #import "configHeader.h"
-
-
+#import "UIImageView+WebCache.h"
 #import "searchResultsTableViewController.h"
+
 @interface searchFromViewController ()
 
 @property (strong, nonatomic) UIImageView * backImageView;//背景图片
-@property (strong, nonatomic)    UITextField * textField;
-
+@property (strong, nonatomic) UITextField * textField;
 @property (strong, nonatomic) searchResultsTableViewController * searchResultsTabVC;
 
 @end
@@ -35,8 +31,6 @@
     
     [self setNav];
     [self setupContentSubviews];
-    
-    
     [self useSignal];
 }
 
@@ -59,6 +53,8 @@
     .heightIs(SCREEN_HEIGHT);
     
     _backImageView.image = [UIImage imageNamed:@"background.jpg"];
+    
+    
     _backImageView.alpha = 0.3;
     _backImageView.userInteractionEnabled = YES;
     _backImageView.layer.borderColor = [UIColor lightGrayColor].CGColor;
@@ -70,7 +66,6 @@
     
     textLabel.text = @"Search Text:";
     textLabel.font = [UIFont systemFontOfSize:14.0f];
-//    textField.backgroundColor = [UIColor yellowColor];
     _textField = textField;
 
     textLabel.sd_layout
@@ -120,7 +115,7 @@
         return [self isValidTextFieldText:text];
 
     }]
-       throttle:0.5]
+       throttle:1]
        
        flattenMap:^RACStream *(NSString  *  text) {
         
@@ -138,7 +133,7 @@
           }];
           [self.searchResultsTabVC displayTweets:tweets];
           
-          NSLog(@"textField.text:%@",tweets);
+          //NSLog(@"textField.text:%@",tweets);
       } error:^(NSError *error) {
           NSLog(@"An error occurred:%@",error);
       }];
@@ -150,7 +145,7 @@
     return text.length >= 2 ? 1 : 0;
 }
 
-//1-1 创建一个授权访问信号
+//1-1 创建一个访问twitter授权访问信号
 -(RACSignal *)requestAccessToTwitterSignal{
     
     //-1 define an errror

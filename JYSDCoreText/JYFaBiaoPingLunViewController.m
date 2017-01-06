@@ -61,8 +61,9 @@
 -(void)sendContent{
     
     
-    NSLog(@"点击了发送按钮");
+    [[NSNotificationCenter defaultCenter ] postNotificationName:@"clickBlockRACButton" object:@"RACSuccess通知的执行机制"];
     
+    NSLog(@"点击了发送按钮");
    // [self.navigationController popToRootViewControllerAnimated:YES];
     
     CGFloat layoutTextHeight = 44;
@@ -195,4 +196,5 @@
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"testDeallocReleaseNotifi" object:nil];
 }
+
 @end

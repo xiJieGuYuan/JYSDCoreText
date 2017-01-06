@@ -10,6 +10,9 @@
 
 #import "UIView+SDAutoLayout.h"
 
+#import "tweetsModel.h"
+#import "UIImageView+WebCache.h"
+
 @interface searchRestultsCustomCell()
 
 @end
@@ -25,7 +28,6 @@
     if (!cell) {
         
         cell = [[searchRestultsCustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-//   searchRestultsCustomCell *     cell = [[searchRestultsCustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return cell;
@@ -54,7 +56,6 @@
     .leftSpaceToView(self.contentView,10)
     .topSpaceToView(self.contentView,10)
     .widthIs(60)
-//    .heightIs(60);
     .heightEqualToWidth();
     
     _twitterStatusText.sd_layout
@@ -71,12 +72,26 @@
     .heightIs(20);
     
     
-    _twitterAvatarView.layer.borderColor = [UIColor redColor].CGColor;
-    _twitterAvatarView.layer.borderWidth = 1.0;
+    
+    _twitterAvatarView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    _twitterAvatarView.layer.borderWidth = 0.5  ;
+    _twitterAvatarView.contentMode = UIViewContentModeScaleAspectFit;
+    _twitterAvatarView.layer.masksToBounds = YES;
+    _twitterAvatarView.layer.cornerRadius = 5.0f;
     
     _twitterStatusText.font= [UIFont systemFontOfSize:14.0];
     _twitterUserNameText.font = [UIFont systemFontOfSize:14.0];
 
 }
+
+
+-(void)setCustomCellWithModel:(tweetsModel *)model{
+    
+    [_twitterAvatarView sd_setImageWithURL:[NSURL URLWithString:model.profileImageUrl]];
+    _twitterStatusText.text = model.status;
+    _twitterUserNameText.text = [NSString stringWithFormat:@"@%@",model.username];
+}
+
+
 
 @end

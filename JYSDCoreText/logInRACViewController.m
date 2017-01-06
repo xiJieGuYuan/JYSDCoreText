@@ -23,10 +23,6 @@
 
 @property (strong, nonatomic) signInService * signInObj;
 
-
-
-
-
 //@property (nonatomic,assign) BOOL userNameIsValid;
 //@property (assign, nonatomic) BOOL passWordIsValid;
 
@@ -62,6 +58,8 @@
     self.signInButton     =  [[UIButton alloc]init];
     self.signInFailureText = [[UILabel alloc]init];
     [self.view sd_addSubviews:@[_userNameField,_passWordField,_signInButton,_signInFailureText]];
+    
+    
     
     
     self.userNameField.sd_layout

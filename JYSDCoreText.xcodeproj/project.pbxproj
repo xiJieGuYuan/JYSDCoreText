@@ -67,6 +67,11 @@
 		4A69AC781DDEF89D00957C7B /* bloom.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4A69AC751DDEF89D00957C7B /* bloom.caf */; };
 		4A69AC791DDEF89D00957C7B /* fold.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4A69AC761DDEF89D00957C7B /* fold.caf */; };
 		4A69AC7A1DDEF89D00957C7B /* selected.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4A69AC771DDEF89D00957C7B /* selected.caf */; };
+		4A79B2971E1629B200CB6168 /* targetActionRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A79B2961E1629B200CB6168 /* targetActionRACViewController.m */; };
+		4A79B29E1E162C9C00CB6168 /* delegateRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A79B29D1E162C9C00CB6168 /* delegateRACViewController.m */; };
+		4A79B2A11E162CA800CB6168 /* blockRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A79B2A01E162CA800CB6168 /* blockRACViewController.m */; };
+		4A79B2A41E162CB500CB6168 /* notificaitonRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A79B2A31E162CB500CB6168 /* notificaitonRACViewController.m */; };
+		4A79B2A71E162CC100CB6168 /* kvoRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A79B2A61E162CC100CB6168 /* kvoRACViewController.m */; };
 		4A7E8C421DE05CF500EBC0BC /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E8C411DE05CF500EBC0BC /* testView.m */; };
 		4A7F856B1DE016C2001F4EC7 /* DWBubbleMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F856A1DE016C2001F4EC7 /* DWBubbleMenuButton.m */; };
 		4A7F85711DE016DD001F4EC7 /* MCFireworksButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F856E1DE016DD001F4EC7 /* MCFireworksButton.m */; };
@@ -102,6 +107,9 @@
 		4ABDF9FF1D68638D0074C249 /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABDF9FD1D68638D0074C249 /* DALabeledCircularProgressView.m */; };
 		4ABDFA041D6863990074C249 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4ABDFA011D6863990074C249 /* MBProgressHUD.bundle */; };
 		4ABDFA051D6863990074C249 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABDFA031D6863990074C249 /* MBProgressHUD.m */; };
+		4AC7BF9F1E1E189100BC7A69 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC7BF9E1E1E189100BC7A69 /* MapKit.framework */; };
+		4AC7BFA61E1E2A7D00BC7A69 /* requestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC7BFA51E1E2A7D00BC7A69 /* requestViewController.m */; };
+		4AC7BFA91E1E2A9700BC7A69 /* requestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC7BFA81E1E2A9700BC7A69 /* requestViewModel.m */; };
 		4ADD461C1DDAB7B300D8FD74 /* transitionAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADD461B1DDAB7B300D8FD74 /* transitionAnimationViewController.m */; };
 		4ADD46201DDAFDB300D8FD74 /* affineTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADD461F1DDAFDB300D8FD74 /* affineTransformViewController.m */; };
 		4ADD46241DDB12BB00D8FD74 /* bezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADD46231DDB12BB00D8FD74 /* bezierPathViewController.m */; };
@@ -248,6 +256,16 @@
 		4A69AC751DDEF89D00957C7B /* bloom.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bloom.caf; sourceTree = "<group>"; };
 		4A69AC761DDEF89D00957C7B /* fold.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fold.caf; sourceTree = "<group>"; };
 		4A69AC771DDEF89D00957C7B /* selected.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = selected.caf; sourceTree = "<group>"; };
+		4A79B2951E1629B200CB6168 /* targetActionRACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = targetActionRACViewController.h; sourceTree = "<group>"; };
+		4A79B2961E1629B200CB6168 /* targetActionRACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = targetActionRACViewController.m; sourceTree = "<group>"; };
+		4A79B29C1E162C9C00CB6168 /* delegateRACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = delegateRACViewController.h; sourceTree = "<group>"; };
+		4A79B29D1E162C9C00CB6168 /* delegateRACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = delegateRACViewController.m; sourceTree = "<group>"; };
+		4A79B29F1E162CA800CB6168 /* blockRACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blockRACViewController.h; sourceTree = "<group>"; };
+		4A79B2A01E162CA800CB6168 /* blockRACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = blockRACViewController.m; sourceTree = "<group>"; };
+		4A79B2A21E162CB500CB6168 /* notificaitonRACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = notificaitonRACViewController.h; sourceTree = "<group>"; };
+		4A79B2A31E162CB500CB6168 /* notificaitonRACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = notificaitonRACViewController.m; sourceTree = "<group>"; };
+		4A79B2A51E162CC100CB6168 /* kvoRACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kvoRACViewController.h; sourceTree = "<group>"; };
+		4A79B2A61E162CC100CB6168 /* kvoRACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kvoRACViewController.m; sourceTree = "<group>"; };
 		4A7E8C401DE05CF500EBC0BC /* testView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testView.h; sourceTree = "<group>"; };
 		4A7E8C411DE05CF500EBC0BC /* testView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testView.m; sourceTree = "<group>"; };
 		4A7F85691DE016C2001F4EC7 /* DWBubbleMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBubbleMenuButton.h; sourceTree = "<group>"; };
@@ -316,6 +334,12 @@
 		4ABDFA011D6863990074C249 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		4ABDFA021D6863990074C249 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		4ABDFA031D6863990074C249 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		4AC7BF9D1E1E183800BC7A69 /* JYSDCoreText.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JYSDCoreText.entitlements; sourceTree = "<group>"; };
+		4AC7BF9E1E1E189100BC7A69 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4AC7BFA41E1E2A7D00BC7A69 /* requestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = requestViewController.h; sourceTree = "<group>"; };
+		4AC7BFA51E1E2A7D00BC7A69 /* requestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = requestViewController.m; sourceTree = "<group>"; };
+		4AC7BFA71E1E2A9700BC7A69 /* requestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = requestViewModel.h; sourceTree = "<group>"; };
+		4AC7BFA81E1E2A9700BC7A69 /* requestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = requestViewModel.m; sourceTree = "<group>"; };
 		4ADD461A1DDAB7B300D8FD74 /* transitionAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transitionAnimationViewController.h; sourceTree = "<group>"; };
 		4ADD461B1DDAB7B300D8FD74 /* transitionAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = transitionAnimationViewController.m; sourceTree = "<group>"; };
 		4ADD461E1DDAFDB300D8FD74 /* affineTransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = affineTransformViewController.h; sourceTree = "<group>"; };
@@ -364,6 +388,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AC7BF9F1E1E189100BC7A69 /* MapKit.framework in Frameworks */,
 				33E2B0F9F911BFBD68A5503D /* Pods_JYSDCoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +413,7 @@
 		057317B871BBFD3C380E6DBC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4AC7BF9E1E1E189100BC7A69 /* MapKit.framework */,
 				28E80514A58126A4A7A314EF /* Pods_JYSDCoreText.framework */,
 			);
 			name = Frameworks;
@@ -405,11 +431,16 @@
 		4A1454CC1DF7DA3700E0170A /* ReactiveCocoa */ = {
 			isa = PBXGroup;
 			children = (
-				4A3A00D11DFFCEAB002A6A23 /* Controller */,
 				4A3A00D21DFFCEC3002A6A23 /* listRAC */,
 				4A1454CD1DF7DA4600E0170A /* funcRAC */,
 				4A3A00D01DFFCE71002A6A23 /* logInRAC */,
 				4A16C76C1E026E8600D5DBF0 /* TwitterInstantRAC */,
+				4A79B2941E16296F00CB6168 /* target-actionRAC */,
+				4A79B29B1E162C3E00CB6168 /* delegateRAC */,
+				4A79B29A1E162C3B00CB6168 /* blockRAC */,
+				4A79B2991E162C3800CB6168 /* notificationRAC */,
+				4A79B2981E162C3500CB6168 /* kvoRAC */,
+				4AC7BFA01E1E24B200BC7A69 /* AFNetworkingRAC */,
 			);
 			name = ReactiveCocoa;
 			sourceTree = "<group>";
@@ -576,13 +607,6 @@
 				4A2B589F1DFFE14D001418A6 /* signInService.m */,
 			);
 			name = logInRAC;
-			sourceTree = "<group>";
-		};
-		4A3A00D11DFFCEAB002A6A23 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Controller;
 			sourceTree = "<group>";
 		};
 		4A3A00D21DFFCEC3002A6A23 /* listRAC */ = {
@@ -782,6 +806,51 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		4A79B2941E16296F00CB6168 /* target-actionRAC */ = {
+			isa = PBXGroup;
+			children = (
+				4A79B2951E1629B200CB6168 /* targetActionRACViewController.h */,
+				4A79B2961E1629B200CB6168 /* targetActionRACViewController.m */,
+			);
+			name = "target-actionRAC";
+			sourceTree = "<group>";
+		};
+		4A79B2981E162C3500CB6168 /* kvoRAC */ = {
+			isa = PBXGroup;
+			children = (
+				4A79B2A51E162CC100CB6168 /* kvoRACViewController.h */,
+				4A79B2A61E162CC100CB6168 /* kvoRACViewController.m */,
+			);
+			name = kvoRAC;
+			sourceTree = "<group>";
+		};
+		4A79B2991E162C3800CB6168 /* notificationRAC */ = {
+			isa = PBXGroup;
+			children = (
+				4A79B2A21E162CB500CB6168 /* notificaitonRACViewController.h */,
+				4A79B2A31E162CB500CB6168 /* notificaitonRACViewController.m */,
+			);
+			name = notificationRAC;
+			sourceTree = "<group>";
+		};
+		4A79B29A1E162C3B00CB6168 /* blockRAC */ = {
+			isa = PBXGroup;
+			children = (
+				4A79B29F1E162CA800CB6168 /* blockRACViewController.h */,
+				4A79B2A01E162CA800CB6168 /* blockRACViewController.m */,
+			);
+			name = blockRAC;
+			sourceTree = "<group>";
+		};
+		4A79B29B1E162C3E00CB6168 /* delegateRAC */ = {
+			isa = PBXGroup;
+			children = (
+				4A79B29C1E162C9C00CB6168 /* delegateRACViewController.h */,
+				4A79B29D1E162C9C00CB6168 /* delegateRACViewController.m */,
+			);
+			name = delegateRAC;
+			sourceTree = "<group>";
+		};
 		4A7E8C3D1DE05CD100EBC0BC /* New Group */ = {
 			isa = PBXGroup;
 			children = (
@@ -893,6 +962,7 @@
 		4ABDF9941D685C060074C249 /* JYSDCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				4AC7BF9D1E1E183800BC7A69 /* JYSDCoreText.entitlements */,
 				4ABDF9981D685C060074C249 /* AppDelegate.h */,
 				4ABDF9991D685C060074C249 /* AppDelegate.m */,
 				4ABDF99B1D685C060074C249 /* ViewController.h */,
@@ -1092,6 +1162,41 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		4AC7BFA01E1E24B200BC7A69 /* AFNetworkingRAC */ = {
+			isa = PBXGroup;
+			children = (
+				4AC7BFA31E1E2A4400BC7A69 /* Controller */,
+				4AC7BFA21E1E2A4200BC7A69 /* View */,
+				4AC7BFA11E1E2A4000BC7A69 /* ViewModel */,
+			);
+			name = AFNetworkingRAC;
+			sourceTree = "<group>";
+		};
+		4AC7BFA11E1E2A4000BC7A69 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4AC7BFA71E1E2A9700BC7A69 /* requestViewModel.h */,
+				4AC7BFA81E1E2A9700BC7A69 /* requestViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		4AC7BFA21E1E2A4200BC7A69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4AC7BFA31E1E2A4400BC7A69 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4AC7BFA41E1E2A7D00BC7A69 /* requestViewController.h */,
+				4AC7BFA51E1E2A7D00BC7A69 /* requestViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		4ADD46191DDAB5CF00D8FD74 /* 过渡动画 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1272,6 +1377,17 @@
 						DevelopmentTeam = W46LMX8S7P;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					4ABDF9AA1D685C060074C249 = {
 						CreatedOnToolsVersion = 7.2;
@@ -1434,6 +1550,8 @@
 				4ABDF9F71D6863350074C249 /* PYPhotosView.m in Sources */,
 				4AE94E381D7AD3260015EF5C /* SDWeiXinPhotoContainerView.m in Sources */,
 				4A43A36D1DA8D4DA00C22E2A /* UIButton+touch.m in Sources */,
+				4AC7BFA61E1E2A7D00BC7A69 /* requestViewController.m in Sources */,
+				4A79B29E1E162C9C00CB6168 /* delegateRACViewController.m in Sources */,
 				4A21A0D21DD6EC0300A6DF11 /* TitleButton.m in Sources */,
 				4A50401D1D82A352001F1D7A /* SinglePageEmojiCell.m in Sources */,
 				4AE94E4A1D7AE39A0015EF5C /* JYFaBiaoPingLunViewController.m in Sources */,
@@ -1441,6 +1559,7 @@
 				4A5040251D82A352001F1D7A /* UIView+Frame.m in Sources */,
 				4A2B58A01DFFE14D001418A6 /* signInService.m in Sources */,
 				4AE94E411D7ADA7C0015EF5C /* SDBrowserImageView.m in Sources */,
+				4A79B2A41E162CB500CB6168 /* notificaitonRACViewController.m in Sources */,
 				4ABDF9F31D6863350074C249 /* PYProgressView.m in Sources */,
 				4ABDF9F61D6863350074C249 /* PYPhotoCell.m in Sources */,
 				4ADD46201DDAFDB300D8FD74 /* affineTransformViewController.m in Sources */,
@@ -1458,6 +1577,7 @@
 				4ABDF99A1D685C060074C249 /* AppDelegate.m in Sources */,
 				4A5040241D82A352001F1D7A /* UIFont+MyFont.m in Sources */,
 				4A69AC4B1DDEF72000957C7B /* DCPathCenterButton.m in Sources */,
+				4A79B2971E1629B200CB6168 /* targetActionRACViewController.m in Sources */,
 				4ABDFA051D6863990074C249 /* MBProgressHUD.m in Sources */,
 				4ABDF9F81D6863350074C249 /* PYPhotoView.m in Sources */,
 				4A50401F1D82A352001F1D7A /* HCEmojiManager.m in Sources */,
@@ -1468,11 +1588,13 @@
 				4A16C7721E026EE100D5DBF0 /* searchFromViewController.m in Sources */,
 				4ABDF9EB1D6863350074C249 /* MBProgressHUD+PY.m in Sources */,
 				4A43A3721DA8DABA00C22E2A /* UIImage+Color.m in Sources */,
+				4A79B2A71E162CC100CB6168 /* kvoRACViewController.m in Sources */,
 				4ABDF9EE1D6863350074C249 /* PYPhotosPreviewController.m in Sources */,
 				4ABDF9F01D6863350074C249 /* PYPhotosViewController.m in Sources */,
 				4A7F857C1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.m in Sources */,
 				4A50401A1D82A352001F1D7A /* EmojiToolBar.m in Sources */,
 				4A16C77D1E027A4D00D5DBF0 /* searchRestultsCustomCell.m in Sources */,
+				4AC7BFA91E1E2A9700BC7A69 /* requestViewModel.m in Sources */,
 				4A7F85711DE016DD001F4EC7 /* MCFireworksButton.m in Sources */,
 				4ABDF9F21D6863350074C249 /* PYConst.m in Sources */,
 				4AE94E321D7AC9C30015EF5C /* JYPengYouQuanModel.m in Sources */,
@@ -1496,6 +1618,7 @@
 				4A43A3761DA8DBAA00C22E2A /* JYSolidColorButton.m in Sources */,
 				4A5040231D82A352001F1D7A /* UIColor+MyColor.m in Sources */,
 				4A7F85721DE016DD001F4EC7 /* MCFireworksView.m in Sources */,
+				4A79B2A11E162CA800CB6168 /* blockRACViewController.m in Sources */,
 				4A21A0BF1DD6E29100A6DF11 /* coreAnimationListViewController.m in Sources */,
 				4ABDF9F51D6863350074C249 /* PYPhotoBrowseView.m in Sources */,
 				4A69AC4A1DDEF72000957C7B /* DCPathButton.m in Sources */,

@@ -52,10 +52,7 @@
     [self addSubview:_nameLabel];
     
     
-    
     _backgroundImageView.sd_layout.spaceToSuperView(UIEdgeInsetsMake(0, 0, 40, 0));
-    
-    
     _iconView.sd_layout.widthIs(70).heightIs(70).rightSpaceToView(self, 15).bottomSpaceToView(self, 20);
     
     
