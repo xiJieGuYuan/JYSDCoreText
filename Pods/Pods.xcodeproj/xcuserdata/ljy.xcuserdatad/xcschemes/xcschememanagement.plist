@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSPatch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>LinqToObjectiveC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,16 +62,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>06D2F77D59A90093FCF1CE90E0EABB0A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>08DD8A0733CCC61CD26FC53D25C8BD4C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>08F2BCCAF85E08C30B1428C1B6C6DD7E</key>
 		<dict>
 			<key>primary</key>
@@ -77,17 +72,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>214B33D4BF82DC3F7874E17B74B302EC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>29DD99664D189A7CA206368F493B1E0B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>654A370006B459D3E7D87E2A0C0F03A6</key>
+		<key>4ED35908E52A82269ABBD0D7594ED35B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,12 +87,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B6A2A8DA4116A73E731FD7E31F2507D8</key>
+		<key>A87685C9D998D3AFC57560C28477FCCF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BD35F2BD1DFEB5E38138DC54DCBE40A4</key>
+		<key>B13574E17EED8AAA9A85CE67AD5B4570</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B2C7258C65D411EFE676CC77D2620001</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B9556E8F05BD293286F15C20B6AD28C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE0AF1FA5B32B6A740F7E07B0058BEDB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3F5E8D8D96376B656748D476BA82369</key>
 		<dict>
 			<key>primary</key>
 			<true/>

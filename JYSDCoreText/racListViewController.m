@@ -10,10 +10,7 @@
 
 #import "reactiveCocoaViewController.h"//funcRAC
 
-
 #import "logInRACViewController.h"//loginVC
-
-
 #import "searchFromViewController.h"//searchVC
 
 
@@ -22,10 +19,9 @@
 #import "blockRACViewController.h"//blockRAC
 #import "notificaitonRACViewController.h"//notificationRAC
 #import "kvoRACViewController.h" //kvoRAC
-
 #import "requestViewController.h"//afnRAC
 
-
+#import "commandViewController.h"//RACCommand
 
 
 
@@ -44,7 +40,7 @@
 -(NSArray *)leftArray{
     
     if (!_leftArray) {
-        _leftArray = @[@"funcRAC",@"logInRAC",@"TwitterInstantRAC",@"targetActionRAC",@"delegateRAC",@"blockRAC",@"notificationRAC",@"kvoRAC",@"afnRAC"];
+        _leftArray = @[@"funcRAC",@"logInRAC",@"TwitterInstantRAC",@"targetActionRAC",@"delegateRAC",@"blockRAC",@"notificationRAC",@"kvoRAC",@"afnRAC",@"RACCommand"];
     }
     return _leftArray;
 }
@@ -153,6 +149,10 @@
             
             case 8:
             [self.navigationController pushViewController:[requestViewController new] animated:YES];
+            break;
+            
+            case 9:
+            [self.navigationController pushViewController:[commandViewController new] animated:YES];
             break;
             
         default:

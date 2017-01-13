@@ -15,6 +15,13 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - BaiduMapKit (3.1.0)
+  - JSPatch (1.1.2):
+    - JSPatch/Core (= 1.1.2)
+  - JSPatch/Core (1.1.2)
+  - JSPatchPlatform (1.6.5):
+    - JSPatchPlatform/Core (= 1.6.5)
+  - JSPatchPlatform/Core (1.6.5):
+    - JSPatch
   - LinqToObjectiveC (2.1.0)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
@@ -36,6 +43,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - BaiduMapKit
+  - JSPatchPlatform
   - LinqToObjectiveC
   - MJExtension
   - MJRefresh
@@ -47,6 +55,8 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BaiduMapKit: 4cfaedb118cff7e157e9771859a4bf65a261b2a1
+  JSPatch: 741205ebb2e2238c223a436e4c8cf75cf40a345f
+  JSPatchPlatform: 45e5a0b2d0a229baec33cbcf7dd3fdb0630edbe8
   LinqToObjectiveC: f0e40c137a458b6b9725c4c7b6a575c0c72e3aec
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
@@ -56,6 +66,6 @@ SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   TZImagePickerController: 3d5b161f7d67bb3481ce9f8b835c23ccc764f2a8
 
-PODFILE CHECKSUM: a7f712df75f68585ad373a10db049e84d3c95a6a
+PODFILE CHECKSUM: 5facf39f5d3a57d35d510127506450f3bd43b243
 
 COCOAPODS: 1.0.1

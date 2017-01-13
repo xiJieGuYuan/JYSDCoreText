@@ -22,5 +22,7 @@ pod 'ReactiveCocoa', '~>2.5'
 use_frameworks!
 
  pod 'LinqToObjectiveC'
+ 
+ pod 'JSPatchPlatform'
 
 end

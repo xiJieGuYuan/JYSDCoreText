@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		33E2B0F9F911BFBD68A5503D /* Pods_JYSDCoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E80514A58126A4A7A314EF /* Pods_JYSDCoreText.framework */; };
+		4A0002EB1E1F878E00CD286C /* commandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0002EA1E1F878E00CD286C /* commandViewController.m */; };
 		4A0700251DE7DD01007446F5 /* testjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A0700241DE7DD01007446F5 /* testjson.json */; };
 		4A0700271DE7E370007446F5 /* createInDestop.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A0700261DE7E370007446F5 /* createInDestop.json */; };
 		4A1454D01DF7DA6400E0170A /* reactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1454CF1DF7DA6400E0170A /* reactiveCocoaViewController.m */; };
@@ -16,6 +17,9 @@
 		4A16C7771E02706300D5DBF0 /* searchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C7761E02706300D5DBF0 /* searchResultsTableViewController.m */; };
 		4A16C77A1E02728C00D5DBF0 /* tweetsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C7791E02728C00D5DBF0 /* tweetsModel.m */; };
 		4A16C77D1E027A4D00D5DBF0 /* searchRestultsCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C77C1E027A4D00D5DBF0 /* searchRestultsCustomCell.m */; };
+		4A1A5C101E287C0100E9A1DD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1A5C0F1E287C0100E9A1DD /* libz.tbd */; };
+		4A1A5C121E287C0800E9A1DD /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1A5C111E287C0800E9A1DD /* JavaScriptCore.framework */; };
+		4A1A5C161E287F2C00E9A1DD /* JSPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1A5C151E287F2C00E9A1DD /* JSPathViewController.m */; };
 		4A21429D1DE80B5A00052CFB /* swimmingFishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21429C1DE80B5A00052CFB /* swimmingFishViewController.m */; };
 		4A21A0BF1DD6E29100A6DF11 /* coreAnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0BE1DD6E29100A6DF11 /* coreAnimationListViewController.m */; };
 		4A21A0C31DD6E89200A6DF11 /* baseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A21A0C21DD6E89200A6DF11 /* baseAnimationViewController.m */; };
@@ -79,6 +83,7 @@
 		4A7F85741DE021ED001F4EC7 /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7F85731DE021ED001F4EC7 /* text.png */; };
 		4A7F85781DE026B4001F4EC7 /* yaWeiImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F85771DE026B4001F4EC7 /* yaWeiImageViewController.m */; };
 		4A7F857C1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F857B1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.m */; };
+		4A8E81371E2089E00009A790 /* logInViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E81361E2089E00009A790 /* logInViewModel.m */; };
 		4AB55DBF1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB55DBE1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m */; };
 		4AB55DC31DD709C400FF89B6 /* groupAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB55DC21DD709C400FF89B6 /* groupAnimationViewController.m */; };
 		4ABDF9971D685C060074C249 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABDF9961D685C060074C249 /* main.m */; };
@@ -161,6 +166,8 @@
 		0A3AA4DF66008FCA3007009F /* Pods-JYSDCoreText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYSDCoreText.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYSDCoreText/Pods-JYSDCoreText.release.xcconfig"; sourceTree = "<group>"; };
 		28E80514A58126A4A7A314EF /* Pods_JYSDCoreText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYSDCoreText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39405C16FF6D29B9C572CC15 /* Pods-JYSDCoreText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYSDCoreText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYSDCoreText/Pods-JYSDCoreText.debug.xcconfig"; sourceTree = "<group>"; };
+		4A0002E91E1F878E00CD286C /* commandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commandViewController.h; sourceTree = "<group>"; };
+		4A0002EA1E1F878E00CD286C /* commandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commandViewController.m; sourceTree = "<group>"; };
 		4A0700241DE7DD01007446F5 /* testjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testjson.json; sourceTree = "<group>"; };
 		4A0700261DE7E370007446F5 /* createInDestop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = createInDestop.json; sourceTree = "<group>"; };
 		4A1454CE1DF7DA6400E0170A /* reactiveCocoaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reactiveCocoaViewController.h; sourceTree = "<group>"; };
@@ -175,6 +182,10 @@
 		4A16C7791E02728C00D5DBF0 /* tweetsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tweetsModel.m; sourceTree = "<group>"; };
 		4A16C77B1E027A4D00D5DBF0 /* searchRestultsCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchRestultsCustomCell.h; sourceTree = "<group>"; };
 		4A16C77C1E027A4D00D5DBF0 /* searchRestultsCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchRestultsCustomCell.m; sourceTree = "<group>"; };
+		4A1A5C0F1E287C0100E9A1DD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4A1A5C111E287C0800E9A1DD /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		4A1A5C141E287F2C00E9A1DD /* JSPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPathViewController.h; sourceTree = "<group>"; };
+		4A1A5C151E287F2C00E9A1DD /* JSPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPathViewController.m; sourceTree = "<group>"; };
 		4A21429B1DE80B5A00052CFB /* swimmingFishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swimmingFishViewController.h; sourceTree = "<group>"; };
 		4A21429C1DE80B5A00052CFB /* swimmingFishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = swimmingFishViewController.m; sourceTree = "<group>"; };
 		4A21A0BD1DD6E29100A6DF11 /* coreAnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coreAnimationListViewController.h; sourceTree = "<group>"; };
@@ -279,6 +290,8 @@
 		4A7F85771DE026B4001F4EC7 /* yaWeiImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yaWeiImageViewController.m; sourceTree = "<group>"; };
 		4A7F857A1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "A-GuideToIOSAnimationViewController.h"; sourceTree = "<group>"; };
 		4A7F857B1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "A-GuideToIOSAnimationViewController.m"; sourceTree = "<group>"; };
+		4A8E81351E2089E00009A790 /* logInViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logInViewModel.h; sourceTree = "<group>"; };
+		4A8E81361E2089E00009A790 /* logInViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logInViewModel.m; sourceTree = "<group>"; };
 		4AB55DBD1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyFrameAnimationViewController.h; sourceTree = "<group>"; };
 		4AB55DBE1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = keyFrameAnimationViewController.m; sourceTree = "<group>"; };
 		4AB55DC11DD709C400FF89B6 /* groupAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groupAnimationViewController.h; sourceTree = "<group>"; };
@@ -388,6 +401,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A1A5C121E287C0800E9A1DD /* JavaScriptCore.framework in Frameworks */,
+				4A1A5C101E287C0100E9A1DD /* libz.tbd in Frameworks */,
 				4AC7BF9F1E1E189100BC7A69 /* MapKit.framework in Frameworks */,
 				33E2B0F9F911BFBD68A5503D /* Pods_JYSDCoreText.framework in Frameworks */,
 			);
@@ -413,10 +428,64 @@
 		057317B871BBFD3C380E6DBC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A1A5C111E287C0800E9A1DD /* JavaScriptCore.framework */,
+				4A1A5C0F1E287C0100E9A1DD /* libz.tbd */,
 				4AC7BF9E1E1E189100BC7A69 /* MapKit.framework */,
 				28E80514A58126A4A7A314EF /* Pods_JYSDCoreText.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A0002E21E1F870500CD286C /* 1-RACSignal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "1-RACSignal";
+			sourceTree = "<group>";
+		};
+		4A0002E31E1F872000CD286C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		4A0002E41E1F872200CD286C /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group1";
+			sourceTree = "<group>";
+		};
+		4A0002E51E1F872500CD286C /* New Group2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group2";
+			sourceTree = "<group>";
+		};
+		4A0002E61E1F872700CD286C /* 3-RACSubject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "3-RACSubject";
+			sourceTree = "<group>";
+		};
+		4A0002E71E1F872A00CD286C /* 2-RACCommand */ = {
+			isa = PBXGroup;
+			children = (
+				4A0002E81E1F875500CD286C /* Controller */,
+			);
+			name = "2-RACCommand";
+			sourceTree = "<group>";
+		};
+		4A0002E81E1F875500CD286C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A0002E91E1F878E00CD286C /* commandViewController.h */,
+				4A0002EA1E1F878E00CD286C /* commandViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		4A0700281DE7E44A007446F5 /* 创建本地json */ = {
@@ -441,6 +510,12 @@
 				4A79B2991E162C3800CB6168 /* notificationRAC */,
 				4A79B2981E162C3500CB6168 /* kvoRAC */,
 				4AC7BFA01E1E24B200BC7A69 /* AFNetworkingRAC */,
+				4A0002E21E1F870500CD286C /* 1-RACSignal */,
+				4A0002E71E1F872A00CD286C /* 2-RACCommand */,
+				4A0002E61E1F872700CD286C /* 3-RACSubject */,
+				4A0002E51E1F872500CD286C /* New Group2 */,
+				4A0002E41E1F872200CD286C /* New Group1 */,
+				4A0002E31E1F872000CD286C /* New Group */,
 			);
 			name = ReactiveCocoa;
 			sourceTree = "<group>";
@@ -492,6 +567,15 @@
 				4A16C7761E02706300D5DBF0 /* searchResultsTableViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		4A1A5C131E287EFC00E9A1DD /* JSPath */ = {
+			isa = PBXGroup;
+			children = (
+				4A1A5C141E287F2C00E9A1DD /* JSPathViewController.h */,
+				4A1A5C151E287F2C00E9A1DD /* JSPathViewController.m */,
+			);
+			name = JSPath;
 			sourceTree = "<group>";
 		};
 		4A2142971DE80AAD00052CFB /* swimmingFish */ = {
@@ -603,6 +687,8 @@
 			children = (
 				4A2B589B1DFFD6F8001418A6 /* logInRACViewController.h */,
 				4A2B589C1DFFD6F8001418A6 /* logInRACViewController.m */,
+				4A8E81351E2089E00009A790 /* logInViewModel.h */,
+				4A8E81361E2089E00009A790 /* logInViewModel.m */,
 				4A2B589E1DFFE14D001418A6 /* signInService.h */,
 				4A2B589F1DFFE14D001418A6 /* signInService.m */,
 			);
@@ -974,6 +1060,7 @@
 				4A7F85791DE02767001F4EC7 /* A-GUIDE-TO-iOS-ANIMATION */,
 				4A2142971DE80AAD00052CFB /* swimmingFish */,
 				4A1454CC1DF7DA3700E0170A /* ReactiveCocoa */,
+				4A1A5C131E287EFC00E9A1DD /* JSPath */,
 				4ABDF99E1D685C060074C249 /* Main.storyboard */,
 				4ABDF9A11D685C060074C249 /* Assets.xcassets */,
 				4ABDF9A31D685C060074C249 /* LaunchScreen.storyboard */,
@@ -1384,6 +1471,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
 							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
@@ -1560,6 +1650,7 @@
 				4A2B58A01DFFE14D001418A6 /* signInService.m in Sources */,
 				4AE94E411D7ADA7C0015EF5C /* SDBrowserImageView.m in Sources */,
 				4A79B2A41E162CB500CB6168 /* notificaitonRACViewController.m in Sources */,
+				4A0002EB1E1F878E00CD286C /* commandViewController.m in Sources */,
 				4ABDF9F31D6863350074C249 /* PYProgressView.m in Sources */,
 				4ABDF9F61D6863350074C249 /* PYPhotoCell.m in Sources */,
 				4ADD46201DDAFDB300D8FD74 /* affineTransformViewController.m in Sources */,
@@ -1571,6 +1662,7 @@
 				4AE94E0E1D7AC5600015EF5C /* JYHeaderView.m in Sources */,
 				4AE94E421D7ADA7C0015EF5C /* SDPhotoBrowser.m in Sources */,
 				4AB55DBF1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m in Sources */,
+				4A1A5C161E287F2C00E9A1DD /* JSPathViewController.m in Sources */,
 				4A50401C1D82A352001F1D7A /* EmojiCollectionView.m in Sources */,
 				4ABDF99D1D685C060074C249 /* ViewController.m in Sources */,
 				4ABDF9F11D6863350074C249 /* PYPhoto.m in Sources */,
@@ -1608,6 +1700,7 @@
 				4A7F856B1DE016C2001F4EC7 /* DWBubbleMenuButton.m in Sources */,
 				4A50401E1D82A352001F1D7A /* HCEmojiKeyboard.m in Sources */,
 				4ADD461C1DDAB7B300D8FD74 /* transitionAnimationViewController.m in Sources */,
+				4A8E81371E2089E00009A790 /* logInViewModel.m in Sources */,
 				4ABDF9FE1D68638D0074C249 /* DACircularProgressView.m in Sources */,
 				4A50401B1D82A352001F1D7A /* EmojiCell.m in Sources */,
 				4A16C7771E02706300D5DBF0 /* searchResultsTableViewController.m in Sources */,
@@ -1762,6 +1855,7 @@
 			baseConfigurationReference = 39405C16FF6D29B9C572CC15 /* Pods-JYSDCoreText.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JYSDCoreText/JYSDCoreText.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: 13718122642@163.com (74B2TWKE39)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = W46LMX8S7P;
@@ -1779,6 +1873,7 @@
 			baseConfigurationReference = 0A3AA4DF66008FCA3007009F /* Pods-JYSDCoreText.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JYSDCoreText/JYSDCoreText.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = W46LMX8S7P;

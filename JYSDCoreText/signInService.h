@@ -12,5 +12,7 @@ typedef void(^RWSignInResponse)(BOOL success);
 
 @interface signInService : NSObject
 
+//暂时不使用
 -(void)signInWithUserName:(NSString *)userName password:(NSString *)password complete:(RWSignInResponse )completeBlock;
+
 @end

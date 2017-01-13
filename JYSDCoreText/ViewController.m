@@ -22,6 +22,8 @@
 
 #import "racListViewController.h"//6.racListVC
 
+#import "JSPathViewController.h"//7.JSPath
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 
@@ -48,7 +50,7 @@
 -(NSArray *)leftTitleArray{
     
     if (!_leftTitleArray) {
-        _leftTitleArray = @[@"杂项",@"friendTrends",@"core animation",@"bezierPath",@"A-GUIDE-TO-iOS-ANIMATION",@"swimmingFish",@"ReactiveCocoa"];
+        _leftTitleArray = @[@"杂项",@"friendTrends",@"core animation",@"bezierPath",@"A-GUIDE-TO-iOS-ANIMATION",@"swimmingFish",@"ReactiveCocoa",@"JSPath"];
     }
     
     return _leftTitleArray;
@@ -85,6 +87,8 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"testjson" ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:path];
     NSDictionary *rootDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+    
+    NSLog(@"rootDict:%@",rootDict);
 
 }
 
@@ -169,6 +173,10 @@
             
         case 6:
             [self.navigationController pushViewController:[racListViewController new] animated:YES];
+            break;
+            
+        case 7:
+            [self.navigationController pushViewController:[JSPathViewController new] animated:YES];
             break;
             
         default:

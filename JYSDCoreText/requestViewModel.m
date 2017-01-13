@@ -46,9 +46,7 @@
             return nil;
         }];
         
-        
         return signal;
-        
     }];
     
 }
