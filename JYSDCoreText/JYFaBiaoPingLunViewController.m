@@ -9,6 +9,7 @@
 #import "JYFaBiaoPingLunViewController.h"
 #import "PYPhotosView.h"
 #import "LayoutTextView.h"
+#import "ChooseImageViewController.h"
 
 @interface JYFaBiaoPingLunViewController ()<PYPhotosViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
@@ -17,6 +18,9 @@
 @property (nonatomic,strong) NSMutableArray * imagesArray;//图片数组
 
 @property (nonatomic,strong) LayoutTextView *layoutTextView ;
+
+@property (strong, nonatomic) UIView * testAnimationView;
+
 
 @end
 
@@ -58,35 +62,101 @@
     _imagePickerController.allowsEditing = YES ;
 }
 
--(void)sendContent{
-    
-    
-    [[NSNotificationCenter defaultCenter ] postNotificationName:@"clickBlockRACButton" object:@"RACSuccess通知的执行机制"];
-    
-    NSLog(@"点击了发送按钮");
-   // [self.navigationController popToRootViewControllerAnimated:YES];
-    
-    CGFloat layoutTextHeight = 44;
 
-//    [self.layoutTextView removeFromSuperview];
+
+
+-(void)testAddViewAnimation{
     
-    if (!self.layoutTextView) {
-        self.layoutTextView = [[LayoutTextView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height , self.view.frame.size.width, layoutTextHeight)];
-        [self.view addSubview:self.layoutTextView];
-        [self.layoutTextView.textView becomeFirstResponder];
-        self.layoutTextView.placeholder = @"@测试一下子";
+    
+    self.testAnimationView = [[UIView alloc]initWithFrame:CGRectZero];
+    self.testAnimationView.frame =CGRectMake(0, 0, 300, 200);
+    self.testAnimationView.backgroundColor = [UIColor orangeColor];
+    self.testAnimationView.center = self.view.center;
+    self.testAnimationView.alpha = 0;
+
+
+
+//这个也是可以达到效果的
+//    CABasicAnimation * animation = [CABasicAnimation animationWithKeyPath:@"backgroundColor"];
+//    animation.toValue = (id)[UIColor greenColor].CGColor;
+//    animation.duration = 2.0f;
+//    animation.fillMode=kCAFillModeForwards;//动画结束之后保持状态不变:=====使得动画在开始前或者结束后仍然保持开始和结束那一刻的值
+//    animation.removedOnCompletion = NO ;//这两个是同时存在
+//
+//    [_testAnimationView.layer addAnimation:animation forKey:@"backgroundColorQQ"];
+//    [self.view addSubview:_testAnimationView];
+    
+    [UIView transitionWithView:self.testAnimationView duration:1.0f options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        self.testAnimationView.alpha = 1;
+        [self.view addSubview:self.testAnimationView];
         
-        [self.layoutTextView setSendBlock:^(UITextView *textView) {
-            NSLog(@"%@",textView.text);
-        }];
-
-    }else{
+    } completion:^(BOOL finished) {
         
-       // [self.layoutTextView setHidden: NO];
-        [self.layoutTextView.textView becomeFirstResponder];
+    }];
 
-    }
+    [self performSelector:@selector(changeTestViewColor) withObject:nil afterDelay:1.0f];
+
 }
+
+//[UIView transitionWithView:self
+//                  duration:0.5f
+//                   options:UIViewAnimationOptionTransitionNone //any animation
+//                animations:^ {
+//                    self.alpha = 0; //增加一个动画渐变效果
+//                }
+//                completion:^(BOOL finished){
+//                    [self removeFromSuperview];
+//                }];
+-(void)changeTestViewColor{  //transition 渐变过渡.......
+    
+    [UIView transitionWithView:self.testAnimationView duration:3.0f options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        self.testAnimationView.alpha = 0;
+    } completion:^(BOOL finished) {
+        [self.testAnimationView removeFromSuperview];
+    }];
+}
+
+
+-(void)sendContent{
+
+    
+//    ChooseImageViewController * chooseVC = [[ChooseImageViewController alloc]init];
+//    
+//    [self.navigationController pushViewController:chooseVC animated:YES];
+    
+    [self testAddViewAnimation];
+    
+}
+
+//-(void)sendContent{
+//    
+//    
+//    [[NSNotificationCenter defaultCenter ] postNotificationName:@"clickBlockRACButton" object:@"RACSuccess通知的执行机制"];
+//    
+//    NSLog(@"点击了发送按钮");
+//   // [self.navigationController popToRootViewControllerAnimated:YES];
+//    
+//    CGFloat layoutTextHeight = 44;
+//
+////    [self.layoutTextView removeFromSuperview];
+//    
+//    if (!self.layoutTextView) {
+//        self.layoutTextView = [[LayoutTextView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height , self.view.frame.size.width, layoutTextHeight)];
+//        [self.view addSubview:self.layoutTextView];
+//        [self.layoutTextView.textView becomeFirstResponder];
+//        self.layoutTextView.placeholder = @"@测试一下子";
+//        
+//        [self.layoutTextView setSendBlock:^(UITextView *textView) {
+//            NSLog(@"%@",textView.text);
+//        }];
+//
+//    }else{
+//        
+//       // [self.layoutTextView setHidden: NO];
+//        [self.layoutTextView.textView becomeFirstResponder];
+//
+//    }
+//}
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
 //    [self.layoutTextView removeFromSuperview];
@@ -121,6 +191,8 @@
     NSLog(@"点击了添加图片按钮 --- 添加前有%zd张图片", images.count);
  
     [self tapChooseImage];
+    
+    
     
     // 刷新
     NSLog(@"添加图片 --- 添加后有%zd张图片", photosView.images.count);
@@ -178,6 +250,8 @@
     [self.imagesArray addObject:image];
     [self.publishPhotosView reloadDataWithImages:self.imagesArray];
 }
+
+
 
 
 -(void)dealloc{

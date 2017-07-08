@@ -12,6 +12,7 @@
 
 @end
 
+
 @implementation JSPathViewController
 
 - (void)viewDidLoad {
@@ -20,11 +21,12 @@
     [self setNav];
     
     [self logErrorArray];
+    [self createTextLabel];
 }
 
 -(void)setNav{
     
-    self.title = @"JSPath";
+    self.title = @"JSPathError";
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
@@ -36,9 +38,19 @@
     for (int i = 0; i < 5; i++) {
         
         NSLog(@"array:%@",array[i]);
-        
     }
-    
-    
 }
+
+
+-(void)createTextLabel {
+    
+    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 40)];
+    label.text = @"看看会不会变";
+    label.textColor = [UIColor orangeColor];
+    label.backgroundColor = [UIColor cyanColor];
+    label.center = self.view.center;
+    [self.view addSubview:label];
+}
+
+
 @end

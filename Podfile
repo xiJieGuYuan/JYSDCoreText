@@ -25,4 +25,6 @@ use_frameworks!
  
  pod 'JSPatchPlatform'
 
+pod 'TZImagePickerController'
+
 end

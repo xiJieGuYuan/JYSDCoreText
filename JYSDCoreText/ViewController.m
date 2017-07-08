@@ -33,17 +33,17 @@
 @property (strong, nonatomic) NSArray * leftTitleArray;
 
 
+//@property (strong, nonatomic) NSMutableString * testStr;
+
+
+
 @end
 
 @implementation ViewController
 
 /*
  
- 
  NSArray * titleArray = @[@"杂项",@"friendTrends",@"core animation",@"bezierPath",@"A-GUIDE-TO-iOS-ANIMATION",@"swimmingFish",@"ReactiveCocoa"];
- 
- 
- 
  */
 
 
@@ -70,6 +70,18 @@
     
     [self setNav];
     [self createTableView];
+    
+//    self.testStr =[NSMutableString stringWithString: @"旧的字符串"];
+//    
+//    NSString * newStr = [NSString string];
+//    
+//    newStr = self.testStr;
+//    
+//    //newStr = @"新的字符串";
+//    
+//    NSLog(@"self.testStr:%@  === newStr:%@",self.testStr,newStr);
+    
+    
 }
 
 

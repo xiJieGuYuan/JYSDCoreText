@@ -23,6 +23,8 @@
 
 #import "commandViewController.h"//RACCommand
 
+#import "subjectViewController.h"//RACSubject
+
 
 
 @interface racListViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -40,7 +42,7 @@
 -(NSArray *)leftArray{
     
     if (!_leftArray) {
-        _leftArray = @[@"funcRAC",@"logInRAC",@"TwitterInstantRAC",@"targetActionRAC",@"delegateRAC",@"blockRAC",@"notificationRAC",@"kvoRAC",@"afnRAC",@"RACCommand"];
+        _leftArray = @[@"funcRAC",@"logInRAC",@"TwitterInstantRAC",@"targetActionRAC",@"delegateRAC",@"blockRAC",@"notificationRAC",@"kvoRAC",@"afnRAC",@"RACCommand",@"RACSubject"];
     }
     return _leftArray;
 }
@@ -153,6 +155,10 @@
             
             case 9:
             [self.navigationController pushViewController:[commandViewController new] animated:YES];
+            break;
+            
+            case 10:
+            [self.navigationController pushViewController:[subjectViewController new] animated:YES];
             break;
             
         default:

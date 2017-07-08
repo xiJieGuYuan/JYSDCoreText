@@ -54,12 +54,12 @@
 #pragma mark - 1.配置JSPath
 -(void)setupJSPath{
     
-   
     
-    //[JSPatch testScriptInBundle];
+#ifdef DEBUG
+    [JSPatch testScriptInBundle];
+#endif
     
-    
-    [JSPatch setupCallback:^(JPCallbackType type, NSDictionary *data, NSError *error) {
+        [JSPatch setupCallback:^(JPCallbackType type, NSDictionary *data, NSError *error) {
         
         
         switch (type) {
@@ -78,7 +78,15 @@
     }];
     
     
+#ifdef DEBUG
+    //do sth.
+#else
     [JSPatch startWithAppKey:JSPathKey];
+#endif
+    
+    
+
+    
 }
 
 

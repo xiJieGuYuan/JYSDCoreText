@@ -12,6 +12,7 @@
 		4A0700251DE7DD01007446F5 /* testjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A0700241DE7DD01007446F5 /* testjson.json */; };
 		4A0700271DE7E370007446F5 /* createInDestop.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A0700261DE7E370007446F5 /* createInDestop.json */; };
 		4A1454D01DF7DA6400E0170A /* reactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1454CF1DF7DA6400E0170A /* reactiveCocoaViewController.m */; };
+		4A1604D11E35D1CB008EE809 /* studyJavaScript.js in Resources */ = {isa = PBXBuildFile; fileRef = 4A1604D01E35D1CB008EE809 /* studyJavaScript.js */; };
 		4A16C7721E026EE100D5DBF0 /* searchFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C7711E026EE100D5DBF0 /* searchFromViewController.m */; };
 		4A16C7741E02702000D5DBF0 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A16C7731E02702000D5DBF0 /* background.jpg */; };
 		4A16C7771E02706300D5DBF0 /* searchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C7761E02706300D5DBF0 /* searchResultsTableViewController.m */; };
@@ -76,6 +77,9 @@
 		4A79B2A11E162CA800CB6168 /* blockRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A79B2A01E162CA800CB6168 /* blockRACViewController.m */; };
 		4A79B2A41E162CB500CB6168 /* notificaitonRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A79B2A31E162CB500CB6168 /* notificaitonRACViewController.m */; };
 		4A79B2A71E162CC100CB6168 /* kvoRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A79B2A61E162CC100CB6168 /* kvoRACViewController.m */; };
+		4A7B9D421E28BF1200F9C498 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B9D411E28BF1200F9C498 /* main.js */; };
+		4A7B9D461E28C09500F9C498 /* subjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B9D451E28C09500F9C498 /* subjectViewController.m */; };
+		4A7B9D491E28C2F000F9C498 /* subjectViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B9D481E28C2F000F9C498 /* subjectViewControllerTwo.m */; };
 		4A7E8C421DE05CF500EBC0BC /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E8C411DE05CF500EBC0BC /* testView.m */; };
 		4A7F856B1DE016C2001F4EC7 /* DWBubbleMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F856A1DE016C2001F4EC7 /* DWBubbleMenuButton.m */; };
 		4A7F85711DE016DD001F4EC7 /* MCFireworksButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F856E1DE016DD001F4EC7 /* MCFireworksButton.m */; };
@@ -83,6 +87,7 @@
 		4A7F85741DE021ED001F4EC7 /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7F85731DE021ED001F4EC7 /* text.png */; };
 		4A7F85781DE026B4001F4EC7 /* yaWeiImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F85771DE026B4001F4EC7 /* yaWeiImageViewController.m */; };
 		4A7F857C1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F857B1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.m */; };
+		4A86E2EA1EC164EC003E8ECB /* ChooseImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86E2E91EC164EC003E8ECB /* ChooseImageViewController.m */; };
 		4A8E81371E2089E00009A790 /* logInViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E81361E2089E00009A790 /* logInViewModel.m */; };
 		4AB55DBF1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB55DBE1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.m */; };
 		4AB55DC31DD709C400FF89B6 /* groupAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB55DC21DD709C400FF89B6 /* groupAnimationViewController.m */; };
@@ -173,6 +178,7 @@
 		4A1454CE1DF7DA6400E0170A /* reactiveCocoaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reactiveCocoaViewController.h; sourceTree = "<group>"; };
 		4A1454CF1DF7DA6400E0170A /* reactiveCocoaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reactiveCocoaViewController.m; sourceTree = "<group>"; };
 		4A1454D11DF8046100E0170A /* LxDBAnything.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LxDBAnything.h; path = ../LxDBAnything.h; sourceTree = "<group>"; };
+		4A1604D01E35D1CB008EE809 /* studyJavaScript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = studyJavaScript.js; sourceTree = "<group>"; };
 		4A16C7701E026EE100D5DBF0 /* searchFromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchFromViewController.h; sourceTree = "<group>"; };
 		4A16C7711E026EE100D5DBF0 /* searchFromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchFromViewController.m; sourceTree = "<group>"; };
 		4A16C7731E02702000D5DBF0 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
@@ -277,6 +283,11 @@
 		4A79B2A31E162CB500CB6168 /* notificaitonRACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = notificaitonRACViewController.m; sourceTree = "<group>"; };
 		4A79B2A51E162CC100CB6168 /* kvoRACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kvoRACViewController.h; sourceTree = "<group>"; };
 		4A79B2A61E162CC100CB6168 /* kvoRACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kvoRACViewController.m; sourceTree = "<group>"; };
+		4A7B9D411E28BF1200F9C498 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		4A7B9D441E28C09500F9C498 /* subjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subjectViewController.h; sourceTree = "<group>"; };
+		4A7B9D451E28C09500F9C498 /* subjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subjectViewController.m; sourceTree = "<group>"; };
+		4A7B9D471E28C2F000F9C498 /* subjectViewControllerTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subjectViewControllerTwo.h; sourceTree = "<group>"; };
+		4A7B9D481E28C2F000F9C498 /* subjectViewControllerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subjectViewControllerTwo.m; sourceTree = "<group>"; };
 		4A7E8C401DE05CF500EBC0BC /* testView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testView.h; sourceTree = "<group>"; };
 		4A7E8C411DE05CF500EBC0BC /* testView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testView.m; sourceTree = "<group>"; };
 		4A7F85691DE016C2001F4EC7 /* DWBubbleMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBubbleMenuButton.h; sourceTree = "<group>"; };
@@ -290,6 +301,8 @@
 		4A7F85771DE026B4001F4EC7 /* yaWeiImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yaWeiImageViewController.m; sourceTree = "<group>"; };
 		4A7F857A1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "A-GuideToIOSAnimationViewController.h"; sourceTree = "<group>"; };
 		4A7F857B1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "A-GuideToIOSAnimationViewController.m"; sourceTree = "<group>"; };
+		4A86E2E81EC164EC003E8ECB /* ChooseImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseImageViewController.h; sourceTree = "<group>"; };
+		4A86E2E91EC164EC003E8ECB /* ChooseImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseImageViewController.m; sourceTree = "<group>"; };
 		4A8E81351E2089E00009A790 /* logInViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logInViewModel.h; sourceTree = "<group>"; };
 		4A8E81361E2089E00009A790 /* logInViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logInViewModel.m; sourceTree = "<group>"; };
 		4AB55DBD1DD6FFAF00FF89B6 /* keyFrameAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyFrameAnimationViewController.h; sourceTree = "<group>"; };
@@ -467,6 +480,7 @@
 		4A0002E61E1F872700CD286C /* 3-RACSubject */ = {
 			isa = PBXGroup;
 			children = (
+				4A7B9D431E28C06B00F9C498 /* Controller */,
 			);
 			name = "3-RACSubject";
 			sourceTree = "<group>";
@@ -529,6 +543,14 @@
 			name = funcRAC;
 			sourceTree = "<group>";
 		};
+		4A1604CF1E35D183008EE809 /* javaScript */ = {
+			isa = PBXGroup;
+			children = (
+				4A1604D01E35D1CB008EE809 /* studyJavaScript.js */,
+			);
+			name = javaScript;
+			sourceTree = "<group>";
+		};
 		4A16C76C1E026E8600D5DBF0 /* TwitterInstantRAC */ = {
 			isa = PBXGroup;
 			children = (
@@ -569,13 +591,14 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		4A1A5C131E287EFC00E9A1DD /* JSPath */ = {
+		4A1A5C131E287EFC00E9A1DD /* JSPath(本地/线上测试/main.js) */ = {
 			isa = PBXGroup;
 			children = (
+				4A7B9D411E28BF1200F9C498 /* main.js */,
 				4A1A5C141E287F2C00E9A1DD /* JSPathViewController.h */,
 				4A1A5C151E287F2C00E9A1DD /* JSPathViewController.m */,
 			);
-			name = JSPath;
+			name = "JSPath(本地/线上测试/main.js)";
 			sourceTree = "<group>";
 		};
 		4A2142971DE80AAD00052CFB /* swimmingFish */ = {
@@ -937,6 +960,17 @@
 			name = delegateRAC;
 			sourceTree = "<group>";
 		};
+		4A7B9D431E28C06B00F9C498 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A7B9D441E28C09500F9C498 /* subjectViewController.h */,
+				4A7B9D451E28C09500F9C498 /* subjectViewController.m */,
+				4A7B9D471E28C2F000F9C498 /* subjectViewControllerTwo.h */,
+				4A7B9D481E28C2F000F9C498 /* subjectViewControllerTwo.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		4A7E8C3D1DE05CD100EBC0BC /* New Group */ = {
 			isa = PBXGroup;
 			children = (
@@ -1001,6 +1035,15 @@
 			name = "A-GUIDE-TO-iOS-ANIMATION";
 			sourceTree = "<group>";
 		};
+		4A86E2E41EC16402003E8ECB /* TZImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				4A86E2E81EC164EC003E8ECB /* ChooseImageViewController.h */,
+				4A86E2E91EC164EC003E8ECB /* ChooseImageViewController.m */,
+			);
+			name = TZImagePicker;
+			sourceTree = "<group>";
+		};
 		4AB55DBC1DD6FF8300FF89B6 /* 关键帧动画 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1060,7 +1103,8 @@
 				4A7F85791DE02767001F4EC7 /* A-GUIDE-TO-iOS-ANIMATION */,
 				4A2142971DE80AAD00052CFB /* swimmingFish */,
 				4A1454CC1DF7DA3700E0170A /* ReactiveCocoa */,
-				4A1A5C131E287EFC00E9A1DD /* JSPath */,
+				4A1A5C131E287EFC00E9A1DD /* JSPath(本地/线上测试/main.js) */,
+				4A1604CF1E35D183008EE809 /* javaScript */,
 				4ABDF99E1D685C060074C249 /* Main.storyboard */,
 				4ABDF9A11D685C060074C249 /* Assets.xcassets */,
 				4ABDF9A31D685C060074C249 /* LaunchScreen.storyboard */,
@@ -1212,6 +1256,7 @@
 		4ABDFA061D6864AC0074C249 /* 朋友圈 */ = {
 			isa = PBXGroup;
 			children = (
+				4A86E2E41EC16402003E8ECB /* TZImagePicker */,
 				4A21A0B91DD6E21B00A6DF11 /* 朋友圈 */,
 				4AE94E441D7AE3330015EF5C /* 发表评论 */,
 			);
@@ -1461,7 +1506,7 @@
 				TargetAttributes = {
 					4ABDF9911D685C060074C249 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = W46LMX8S7P;
+						DevelopmentTeam = 499JTRQL73;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1532,6 +1577,7 @@
 				4A69AC671DDEF89200957C7B /* chooser-moment-icon-camera-highlighted@2x.png in Resources */,
 				4AE94E2C1D7AC7580015EF5C /* pic1.jpg in Resources */,
 				4ABDFA041D6863990074C249 /* MBProgressHUD.bundle in Resources */,
+				4A7B9D421E28BF1200F9C498 /* main.js in Resources */,
 				4A69AC611DDEF89200957C7B /* chooser-button-input-highlighted@2x.png in Resources */,
 				4A7F85741DE021ED001F4EC7 /* text.png in Resources */,
 				4AE94E2E1D7AC7580015EF5C /* pic3.jpg in Resources */,
@@ -1550,6 +1596,7 @@
 				4AE94E241D7AC7580015EF5C /* pic7.jpg in Resources */,
 				4ABDF9A21D685C060074C249 /* Assets.xcassets in Resources */,
 				4A0700271DE7E370007446F5 /* createInDestop.json in Resources */,
+				4A1604D11E35D1CB008EE809 /* studyJavaScript.js in Resources */,
 				4A69AC681DDEF89200957C7B /* chooser-moment-icon-camera@2x.png in Resources */,
 				4A69AC701DDEF89200957C7B /* chooser-moment-icon-thought@2x.png in Resources */,
 				4A69AC6F1DDEF89200957C7B /* chooser-moment-icon-thought-highlighted@2x.png in Resources */,
@@ -1594,7 +1641,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9B7D213C67083650F0D963DA /* [CP] Copy Pods Resources */ = {
@@ -1648,6 +1695,7 @@
 				4ABDF9FF1D68638D0074C249 /* DALabeledCircularProgressView.m in Sources */,
 				4A5040251D82A352001F1D7A /* UIView+Frame.m in Sources */,
 				4A2B58A01DFFE14D001418A6 /* signInService.m in Sources */,
+				4A7B9D491E28C2F000F9C498 /* subjectViewControllerTwo.m in Sources */,
 				4AE94E411D7ADA7C0015EF5C /* SDBrowserImageView.m in Sources */,
 				4A79B2A41E162CB500CB6168 /* notificaitonRACViewController.m in Sources */,
 				4A0002EB1E1F878E00CD286C /* commandViewController.m in Sources */,
@@ -1682,6 +1730,7 @@
 				4A43A3721DA8DABA00C22E2A /* UIImage+Color.m in Sources */,
 				4A79B2A71E162CC100CB6168 /* kvoRACViewController.m in Sources */,
 				4ABDF9EE1D6863350074C249 /* PYPhotosPreviewController.m in Sources */,
+				4A7B9D461E28C09500F9C498 /* subjectViewController.m in Sources */,
 				4ABDF9F01D6863350074C249 /* PYPhotosViewController.m in Sources */,
 				4A7F857C1DE027B6001F4EC7 /* A-GuideToIOSAnimationViewController.m in Sources */,
 				4A50401A1D82A352001F1D7A /* EmojiToolBar.m in Sources */,
@@ -1709,6 +1758,7 @@
 				4A43A36C1DA8D4DA00C22E2A /* UIButton+Delay.m in Sources */,
 				4A21A0C31DD6E89200A6DF11 /* baseAnimationViewController.m in Sources */,
 				4A43A3761DA8DBAA00C22E2A /* JYSolidColorButton.m in Sources */,
+				4A86E2EA1EC164EC003E8ECB /* ChooseImageViewController.m in Sources */,
 				4A5040231D82A352001F1D7A /* UIColor+MyColor.m in Sources */,
 				4A7F85721DE016DD001F4EC7 /* MCFireworksView.m in Sources */,
 				4A79B2A11E162CA800CB6168 /* blockRACViewController.m in Sources */,
@@ -1858,7 +1908,7 @@
 				CODE_SIGN_ENTITLEMENTS = JYSDCoreText/JYSDCoreText.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: 13718122642@163.com (74B2TWKE39)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = W46LMX8S7P;
+				DEVELOPMENT_TEAM = 499JTRQL73;
 				INFOPLIST_FILE = JYSDCoreText/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1876,7 +1926,7 @@
 				CODE_SIGN_ENTITLEMENTS = JYSDCoreText/JYSDCoreText.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = W46LMX8S7P;
+				DEVELOPMENT_TEAM = 499JTRQL73;
 				INFOPLIST_FILE = JYSDCoreText/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
