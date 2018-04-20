@@ -68,6 +68,7 @@
     
     [self setNav];
     [self createTableView];
+    NSLog(@"第一次修改")
 }
 
 
