@@ -32,9 +32,8 @@
     
     //1.配置JSPath
     [self setupJSPath];
-    
-    
     NSLog(@"修改了第二个文件");
+
     return YES;
     
    }
