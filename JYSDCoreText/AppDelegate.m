@@ -34,7 +34,7 @@
     [self setupJSPath];
     
     
-        
+    NSLog(@"修改了第二个文件=========多次编辑");
     return YES;
     
    }
