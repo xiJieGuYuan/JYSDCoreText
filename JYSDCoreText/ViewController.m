@@ -68,10 +68,15 @@
     
     [self setNav];
     [self createTableView];
+<<<<<<< HEAD
 
     NSLog(@"第一次修改");
     NSLog(@"第二次修改");
 
+=======
+    NSLog(@"第一次修改");
+    NSLog(@"第二次修改");
+>>>>>>> 487de05... 第二次修改
 }
 
 
