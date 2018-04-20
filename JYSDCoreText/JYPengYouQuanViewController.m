@@ -53,6 +53,7 @@
 
 -(void)testDeallocReleaseNotifi{
 //      NSLog(@"testDeallocReleaseNotifi === self.navigationController:%@,数组%@  =====firstObject:%@",self.navigationController,self.navigationController.viewControllers,[self.navigationController.viewControllers lastObject]);
+    NSLog(@"修改了第四个文件");
 }
 
 #pragma mark - 1.设置导航栏相关内容
