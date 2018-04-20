@@ -28,7 +28,7 @@
     
     self.title = @"牙位图";
     self.view.backgroundColor = [UIColor cyanColor];
-    
+    NSLog(@"修改了第三个文件");
 }
 
 - (void)setupSubviews {
