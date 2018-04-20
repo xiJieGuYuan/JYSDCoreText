@@ -5,24 +5,22 @@
 //  Created by Mr  liao jia yang  on 16/8/20.
 //  Copyright © 2016年 MrReYun.demo. All rights reserved.
 //
-
+#include <objc/runtime.h>
 #import "ViewController.h"
-
 #import "UIView+SDAutoLayout.h"
 #import "JYSolidColorButton.h"
-
 #import "yaWeiImageViewController.h"//杂项
-
 #import "JYPengYouQuanViewController.h"//1.朋友圈
 #import "coreAnimationListViewController.h"//2.动画列表
 #import "bezierPathViewController.h" //3.绘图
 #import "A-GuideToIOSAnimationViewController.h"//4
-
 #import "swimmingFishViewController.h"//5.游泳的鱼
-
 #import "racListViewController.h"//6.racListVC
-
 #import "JSPathViewController.h"//7.JSPath
+#import "GCDViewController.h"//8.gcd
+#import "RunTimeMethodsSwizzlingViewController.h"//9.runtime交换方法
+#import "ScanImageViewController.h" //10.二维码扫描
+#import "TestALibray.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -36,21 +34,20 @@
 //@property (strong, nonatomic) NSMutableString * testStr;
 
 
-
 @end
 
 @implementation ViewController
 
-/*
- 
- NSArray * titleArray = @[@"杂项",@"friendTrends",@"core animation",@"bezierPath",@"A-GUIDE-TO-iOS-ANIMATION",@"swimmingFish",@"ReactiveCocoa"];
- */
-
-
 -(NSArray *)leftTitleArray{
     
     if (!_leftTitleArray) {
-        _leftTitleArray = @[@"杂项",@"friendTrends",@"core animation",@"bezierPath",@"A-GUIDE-TO-iOS-ANIMATION",@"swimmingFish",@"ReactiveCocoa",@"JSPath"];
+        _leftTitleArray = @[@"杂项",@"friendTrends",
+                            @"core animation",@"bezierPath",
+                            @"A-GUIDE-TO-iOS-ANIMATION",@"swimmingFish",
+                            @"ReactiveCocoa",@"JSPath",
+                            @"GCD",@"runtimeSwizzling",
+                            @"scanImage",
+                            @".a文件的制作"];
     }
     
     return _leftTitleArray;
@@ -62,6 +59,7 @@
     [super viewWillAppear:animated];
     
      NSLog(@"self.navigationController:%@,数组%@  =====firstObject:%@",self.navigationController,self.navigationController.viewControllers,[self.navigationController.viewControllers firstObject]);
+
 }
 
 
@@ -70,18 +68,6 @@
     
     [self setNav];
     [self createTableView];
-    
-//    self.testStr =[NSMutableString stringWithString: @"旧的字符串"];
-//    
-//    NSString * newStr = [NSString string];
-//    
-//    newStr = self.testStr;
-//    
-//    //newStr = @"新的字符串";
-//    
-//    NSLog(@"self.testStr:%@  === newStr:%@",self.testStr,newStr);
-    
-    
 }
 
 
@@ -158,14 +144,40 @@
     
     
     switch (indexPath.row) {
-        case 0:
-            [self.navigationController pushViewController:[yaWeiImageViewController new] animated:YES];
-            break;
+        case 0:{
             
-        case 1:
-            [self.navigationController pushViewController:[JYPengYouQuanViewController new] animated:YES];
-            break;
             
+            GCDViewController * vc = [[GCDViewController alloc]init];
+            
+            unsigned int outCount = 0;
+            Ivar * ivars = class_copyIvarList([UITextField class], &outCount);
+            for (unsigned int i = 0; i < outCount; i ++) {
+                Ivar ivar = ivars[i];
+                const char * name = ivar_getName(ivar);
+                const char * type = ivar_getTypeEncoding(ivar);
+                NSLog(@"+++++类型为 %s 的 %s ",type, name);
+            }
+            free(ivars);
+            
+            
+            unsigned int outCountA = 0;
+            Ivar * ivarsA = class_copyIvarList([UISearchBar class], &outCountA);
+            for (unsigned int i = 0; i < outCountA; i ++) {
+                Ivar ivar = ivarsA[i];
+                const char * name = ivar_getName(ivar);
+                const char * type = ivar_getTypeEncoding(ivar);
+                NSLog(@"----类型为 %s 的 %s ",type, name);
+            }
+            free(ivars);
+            
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 1:{
+            JYPengYouQuanViewController * vc = [[JYPengYouQuanViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         case 2:
             [self.navigationController pushViewController:[coreAnimationListViewController new] animated:YES];
             break;
@@ -190,6 +202,26 @@
         case 7:
             [self.navigationController pushViewController:[JSPathViewController new] animated:YES];
             break;
+            
+        case 8:
+            [self.navigationController pushViewController:[RunTimeMethodsSwizzlingViewController new] animated:YES];
+            break;
+            
+        case 9:
+            
+            [self.navigationController pushViewController:[ScanImageViewController new] animated:YES];
+            break;
+            
+        case 10:
+            [self.navigationController pushViewController:[ScanImageViewController new] animated:YES];
+            break;
+            
+        case 11:{
+            TestALibray * libray = [[TestALibray alloc]init];
+            [libray ouputStringWithInputName:@"测试.a文件的输出内容"];
+        }
+            break;
+            
             
         default:
             break;

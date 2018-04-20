@@ -27,6 +27,11 @@
 
 @implementation JYPengYouQuanViewController
 
++(void)load{
+    [super load];
+    NSLog(@"执行了GCDViewController+++load方法");
+}
+
 -(void)viewWillAppear:(BOOL)animated{
 
     

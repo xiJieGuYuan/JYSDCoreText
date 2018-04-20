@@ -8,11 +8,13 @@
 
 #import "affineTransformViewController.h"
 #import "configHeader.h"
-
+#import "POP.h"
 @interface affineTransformViewController ()
 
 
 @property (strong, nonatomic) UIImageView * demoView;
+@property (strong, nonatomic) UIImageView * testDemoView;
+
 
 @end
 
@@ -35,6 +37,13 @@
     _demoView.image = [UIImage imageNamed:@"京东京豆"];
     _demoView.contentMode = UIViewContentModeScaleAspectFit;
     [self.view addSubview:_demoView];
+    
+//    self.testDemoView = [[UIImageView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/2 - 50, SCREEN_HEIGHT/2 -150, 100, 100)];
+    self.testDemoView = [[UIImageView alloc]init];
+    _testDemoView.backgroundColor = [UIColor orangeColor];
+    _testDemoView.contentMode = UIViewContentModeScaleAspectFit;
+    [self.view addSubview:_testDemoView];
+    
 }
 
 /*
@@ -106,39 +115,32 @@
 -(void)positionAnimation{
     
     _demoView.transform = CGAffineTransformIdentity;
-    
     [UIView animateWithDuration:1.0f animations:^{
-        
         _demoView.transform = CGAffineTransformMakeTranslation(100, 100);
     }];
 }
-
-
 #pragma mark - 2.scaleAnimatioon ->缩放
 -(void)scaleAnimation{
     
-    _demoView.transform = CGAffineTransformIdentity;
-    
-    [UIView animateWithDuration:1.0 animations:^{
-        
-        _demoView.transform = CGAffineTransformMakeScale(2, 2);
-    }];
+//    _demoView.transform = CGAffineTransformIdentity;
+//    [UIView animateWithDuration:1.0 animations:^{
+//        _demoView.transform = CGAffineTransformMakeScale(2, 2);
+//    }];
+    POPBasicAnimation *anBasic = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerPositionX];
+    anBasic.toValue = @(self.demoView.center.y+10);
+    anBasic.beginTime = CACurrentMediaTime() + 1.0f;
+    [self.demoView pop_addAnimation:anBasic forKey:@"position"];
 }
-
 #pragma mark - 3.roateAnimation ->旋转
 -(void)rotateAnimation{
     
     _demoView.transform = CGAffineTransformIdentity;
-    
     [UIView animateWithDuration:1.0f animations:^{
-        
         _demoView.transform = CGAffineTransformMakeRotation(M_PI);
     }];
 }
-
 #pragma mark - 4.combinationAnimation ->组合
 -(void)combinationAnimation{
-    
     //仿射变换的组合使用
     _demoView.transform = CGAffineTransformIdentity;
     
