@@ -70,7 +70,11 @@
     [self createTableView];
 
 
+
     NSLog(@"第一次修改");
+
+    NSLog(@"第一次修改");
+    NSLog(@"第二次修改");
 }
 
 
