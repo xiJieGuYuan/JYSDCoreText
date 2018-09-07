@@ -1,2 +1,2 @@
 # JYSDCoreText
-测试编写
+功能集合
